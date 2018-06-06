@@ -10,23 +10,18 @@ class TodoApp extends React.Component {
 
   addTodoHandler = (e) => {
     e.preventDefault()
-    const v = e.target.elements.addTextInput.value
-    this.setState( () => (   
-      this.state.todos.push(v)
-    ))
-    e.target.elements.addTextInput.value=''
+    const todoAdded = e.target.elements.addTextInput.value.trim()
+    if (!!todoAdded) {
+      this.setState( () => ( this.state.todos.push(todoAdded) ))
+      e.target.elements.addTextInput.value=''
+    }
   }
 
-  doneHandler = (d) => {
-   
+  doneHandler = (d) => { 
     this.setState( (prevState) => (   
       {todos: prevState.todos.filter( todo => d !== todo)}
     ))
-    
   }
-
-
-
 
   render () {
     return (
