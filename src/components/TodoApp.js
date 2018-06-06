@@ -12,7 +12,7 @@ class TodoApp extends React.Component {
     e.preventDefault()
     const v = e.target.elements.addTextInput.value
     this.setState( () => (   
-       this.state.todos.push(v)
+      this.state.todos.push(v)
     ))
     e.target.elements.addTextInput.value=''
   }
@@ -20,7 +20,7 @@ class TodoApp extends React.Component {
   doneHandler = (d) => {
    
     this.setState( (prevState) => (   
-       {todos: prevState.todos.filter( todo => d !== todo)}
+      {todos: prevState.todos.filter( todo => d !== todo)}
     ))
     
   }

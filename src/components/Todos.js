@@ -6,12 +6,11 @@ const Todos = (props) =>  (
   <div className='todoContainer'>
     <DateBar />
     { props.todos.map((t,i) =>  
-        <Todo 
-        className = 'todo' 
-        t={t} 
-        key={i}
-        doneHandler={props.doneHandler} /> )}
-    
+      <Todo 
+      className = 'todo' 
+      t={t} 
+      key={i}
+      doneHandler={props.doneHandler} /> )}  
     </div>
 )
 
