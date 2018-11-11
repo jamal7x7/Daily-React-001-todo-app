@@ -1,5 +1,5 @@
 import React from 'react'
-import '../styles/style.css'
+import '../styles/style.sass'
 import Todos from './Todos'
 import AddTodo from './AddTodo'
 
