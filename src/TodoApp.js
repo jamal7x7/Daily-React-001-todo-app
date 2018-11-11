@@ -9,12 +9,10 @@ export default function TodoApp (props) {
 
   function addTodoHandler (e) {
     e.preventDefault()
-    // e.target.style.visibility = 'hidden'
-    const todoAdded = e.target.elements.textInput.value.trim()
+    const todoAdded = e.target.elements.addTextInput.value.trim()
     if (todoAdded) {
-      setTodos([...todos, todoAdded])
-
-      e.target.elements.textInput.value = ''
+      setTodos(() => (todos.push(todoAdded)))
+      e.target.elements.addTextInput.value = ''
     }
   }
 
@@ -26,21 +24,55 @@ export default function TodoApp (props) {
 
   return (
 
+    // <div>
+    //   <h1> hello </h1>
+
+    // </div>
     <div >
+      {/* <h1 className='title'> TODO APP </h1> */}
       <Todos
         todos={todos}
         doneHandler={doneHandler} />
       <AddTodo
         addTodoHandler={addTodoHandler} />
-
     </div>
   )
 }
+// class TodoApp extends React.Component {
+//   state = {
+//     todos: ['morning run', 'buy milk ','#100daysofcode challenge']
+//   }
+
+//   addTodoHandler = (e) => {
+//     e.preventDefault()
+//     const todoAdded = e.target.elements.addTextInput.value.trim()
+//     if (!!todoAdded) {
+//       this.setState( () => ( this.state.todos.push(todoAdded) ))
+//       e.target.elements.addTextInput.value=''
+//     }
+//   }
+
+//   doneHandler = (d) => {
+//     this.setState( (prevState) => (
+//       {todos: prevState.todos.filter( todo => d !== todo)}
+//     ))
+//   }
+
+//   render () {
+//     return (
+//       <div >
+//         {/* <h1 className='title'> TODO APP </h1> */}
+//         <Todos todos={this.state.todos} doneHandler={this.doneHandler}/>
+//         <AddTodo addTodoHandler={this.addTodoHandler} />
+//       </div>
+//     )
+//   }
+// }
 
 const AddTodo = (props) => (
   <div className='addTodoContainer'>
     <form action='' onSubmit={props.addTodoHandler}>
-      <input type='text' name='textInput' placeholder='Type here ...' />
+      <input type='text' name='addTextInput' placeholder='Type here ...' />
       <button> ADD </button>
     </form>
   </div>
@@ -64,43 +96,11 @@ const Todo = (props) => (
 const Todos = (props) => (
   <div className='todoContainer'>
     <DateBar />
-    { props.todos.map(t =>
+    { props.todos.map((t, i) =>
       <Todo
         className='todo'
         t={t}
-        key={t}
-        doneHandler={props.doneHandler}
-      />)}
+        key={i}
+        doneHandler={props.doneHandler} />)}
   </div>
 )
-
-// class TodoApp extends React.Component {
-  //   state = {
-  //     todos: ['morning run', 'buy milk ','#100daysofcode challenge']
-  //   }
-
-  //   addTodoHandler = (e) => {
-  //     e.preventDefault()
-  //     const todoAdded = e.target.elements.addTextInput.value.trim()
-  //     if (!!todoAdded) {
-  //       this.setState( () => ( this.state.todos.push(todoAdded) ))
-  //       e.target.elements.addTextInput.value=''
-  //     }
-  //   }
-
-  //   doneHandler = (d) => {
-  //     this.setState( (prevState) => (
-  //       {todos: prevState.todos.filter( todo => d !== todo)}
-  //     ))
-  //   }
-
-  //   render () {
-  //     return (
-  //       <div >
-  //         {/* <h1 className='title'> TODO APP </h1> */}
-  //         <Todos todos={this.state.todos} doneHandler={this.doneHandler}/>
-  //         <AddTodo addTodoHandler={this.addTodoHandler} />
-  //       </div>
-  //     )
-  //   }
-  // }
