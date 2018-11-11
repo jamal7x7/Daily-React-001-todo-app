@@ -157,3 +157,58 @@ button
       width: 800px
 
    
+.todos-appear 
+  opacity: 0.01
+  transform: translateY(100%) scale(0.75)
+
+.todos-appear-active 
+  opacity: 1
+  transform: translateY(0%) scale(1.02)
+  transition: all 300ms ease-out
+
+.todos-enter 
+  opacity: 0.01
+  transform: translateY(100%) scale(0.9)
+
+.todos-enter-active 
+  opacity: 1
+  transform: translateY(0%) scale(1.02)
+  transition: all 300ms ease-in
+.todos-exit 
+  opacity: 1
+  transform: translateX(0) scale(1)
+
+.todos-exit-active 
+  opacity: 0
+  transform: translateX(-100%) scale(0.3)
+  transition: all 300ms ease-out
+
+
+
+.inp-appear 
+  opacity: 0.01
+  transform: translateY(100%) scale(0.75)
+
+.inp-appear-active 
+  opacity: 1
+  transform: translateY(0%) scale(1.02)
+  transition: all 300ms ease-out
+
+
+.inp-enter 
+  opacity: 0.01
+  transform: translateY(-100%) scale(0.9)
+
+.inp-enter-active 
+  opacity: 1
+  transform: translateY(0%) scale(1.02)
+  transition: all 300ms ease-in
+.inp-exit 
+  opacity: 1
+  transform: scale(1.25)
+
+.inp-exit-active 
+  opacity: 0
+  transform: scale(4)
+  transition: all 300ms ease-in
+
