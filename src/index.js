@@ -3,11 +3,11 @@ import ReactDOM from 'react-dom'
 import './index.css'
 // import TodoApp from './components/TodoApp'
 // import TodoApp01 from './playground/TodoApp01'
-import TodoApp02 from './playground/TodoApp02'
+import TodoApp from './playground/TodoApp03'
 // import App from './components/App'
 import * as serviceWorker from './serviceWorker'
 
-ReactDOM.render(<TodoApp02 />, document.getElementById('root'))
+ReactDOM.render(<TodoApp />, document.getElementById('root'))
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

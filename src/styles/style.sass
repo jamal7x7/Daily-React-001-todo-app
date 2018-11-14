@@ -58,18 +58,8 @@ body
   margin-top: 0
   text-align: center
 
-form 
-  display: flex
-  justify-content: left
-  // border: 1px solid $bgm
-  padding: 0
-  width: 500px
-  margin: 0 auto
-  color: rgb(250, 209, 253)
-  box-shadow: black 0 50px 120px -20px
-  background-color: rgba($bgl, 1)
-
 .todos
+  
   display: grid
   grid-template-columns: 2rem 1fr
   grid-template-rows: auto
@@ -91,11 +81,13 @@ form
     grid-area: color-priority
     width: 2rem
     background: $bgm
-    display: flex
-    justify-content: center
-    align-items: center
-    flex-direction: column
+    display: grid
+    // justify-content: center
+    // align-items: center
+    // flex-direction: column
     .color-dot
+      justify-self: center
+      align-self: center
       width: .7rem
       height: .7rem
       background: $per
@@ -117,14 +109,28 @@ form
   cursor: pointer
   font-weight: 5
 
+form 
+  display: grid
+  grid-template-columns: 1fr 8rem 
+  grid-template-rows: auto
+  grid-template-areas:  'input add-btn'
+  // border: 1px solid $bgm
+  padding: 0
+  width: 500px
+  margin: 0 auto
+  color: rgb(250, 209, 253)
+  box-shadow: black 0 50px 120px -20px
+  background-color: rgba($bgl, 1)
+
+
 input 
   appearance: non
+  grid-area: input
   background-color: $bgm
   border: 0 solid $bgd
-  padding: 1rem 1rem
+  padding: 1rem 1rem 1rem 2rem
   color: antiquewhite
   flex-grow: 1
-  width: 200px
   font-size: 1rem
   background-color: rgba($bgl, 0.8)
   &:focus
@@ -133,13 +139,13 @@ input
 
 button 
   appearance: none
-  
+  grid-area: add-btn
   background-color: $bgl
   border: 0 solid $per
   padding: 1rem
   color: antiquewhite
-  flex-grow: 0
-  width: 4.5rem
+  flex-grow: 1
+  width: 100%
   font-size: 1rem
   &:focus
     outline: none
@@ -168,12 +174,14 @@ button
 
 .todos-enter 
   opacity: 0.01
-  transform: translateY(100%) scale(0.9)
+  background: $bgl
+  transform: translateY(-30%) scaleY(0.5)
 
 .todos-enter-active 
   opacity: 1
-  transform: translateY(0%) scale(1.02)
-  transition: all 300ms ease-in
+  background: $bgm
+  transform: translateY(0%) scale(1.00)
+  transition: all 300ms cubic-bezier(0.215, 0.61, 0.355, 1)
 .todos-exit 
   opacity: 1
   transform: translateX(0) scale(1)
@@ -181,34 +189,22 @@ button
 .todos-exit-active 
   opacity: 0
   transform: translateX(-100%) scale(0.3)
-  transition: all 300ms ease-out
+  transition: all 300ms ease-in-out
 
 
 
-.inp-appear 
+.todoContainerDate-enter 
   opacity: 0.01
-  transform: translateY(100%) scale(0.75)
+  transform: translateX(-100%) scale(0.9)
 
-.inp-appear-active 
-  opacity: 1
-  transform: translateY(0%) scale(1.02)
-  transition: all 300ms ease-out
-
-
-.inp-enter 
-  opacity: 0.01
-  transform: translateY(-100%) scale(0.9)
-
-.inp-enter-active 
+.todoContainerDate-enter-active 
   opacity: 1
   transform: translateY(0%) scale(1.02)
   transition: all 300ms ease-in
-.inp-exit 
-  opacity: 1
-  transform: scale(1.25)
-
-.inp-exit-active 
+.todoContainerDate-exit 
   opacity: 0
-  transform: scale(4)
+
+.todoContainerDate-exit-active 
+  opacity: 1
   transition: all 300ms ease-in
 
