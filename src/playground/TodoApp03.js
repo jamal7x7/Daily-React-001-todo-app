@@ -22,7 +22,7 @@ export default props => {
 
   const [todos, setTodos] = useState(['H', 'I'])
 
-  const handleAdd = ( e => {
+  const handleAdd = ( e => { 
     e.preventDefault()
     let t = e.target.elements.text.value
     t && setTodos( () => [...todos, t]) 
@@ -65,8 +65,8 @@ const TestContext = props => (
             if (context.cool) {
               return (
                 <>
-                  <h1> Inside Consumer {context.myName} </h1>
-                  <h1> and I'm verry cool    </h1>
+                  <p> Hello, I'm {context.myName} </p>
+                  <h1>    </h1>
                 </>
               )
             }
