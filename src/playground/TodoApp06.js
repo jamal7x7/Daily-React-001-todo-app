@@ -1,5 +1,6 @@
-import React, { useReducer, useRef } from "react"
-import { Spring, Transition, config } from 'react-spring'
+import React, { useReducer, useRef, useEffect } from "react"
+import { Spring, config } from 'react-spring'
+import { join } from "path";
 
 const reducer = (state, action) => {
   switch (action.type) {
@@ -37,6 +38,24 @@ export default () => {
   const date = new Date()
   const inputRef = useRef()
   const [todos, dispatch] = useReducer(reducer,[])
+
+  useEffect( () => {
+    
+    let obj = {
+      name: 'Jamal',
+      speed: 39,
+      height : 1.82
+    }
+    
+    
+    function n ({name})  {
+      console.log('My name is :' + name );
+      
+    }
+
+    n(obj)
+
+  })
 
   const handleAddTodo = e => {
     e.preventDefault()
@@ -272,3 +291,5 @@ export default () => {
 //       Today is {date.toDateString()}
 //     </div>
 // )}
+
+

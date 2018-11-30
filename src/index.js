@@ -5,7 +5,7 @@ import './index.css'
 import './styles/style.sass'
 // import TodoApp from './components/TodoApp'
 // import TodoApp01 from './playground/TodoApp01'
-import TodoApp from './playground/TodoApp06'
+import TodoApp from './playground/contextReducer'
 // import App from './components/App'
 import * as serviceWorker from './serviceWorker'
 

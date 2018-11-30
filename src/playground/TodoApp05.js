@@ -21,7 +21,7 @@ export default (props) => {
   }
   
   const handleCompleted = ind => {
-    let newTodos = [...todos]
+  let newTodos = [...todos]
     newTodos.map( (t, i) => {
       if (i === ind) {
         todos[i].completed = !todos[i].completed
