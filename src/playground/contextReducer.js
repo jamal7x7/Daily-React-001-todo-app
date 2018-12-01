@@ -1,7 +1,7 @@
-import React, {useReducer, useRef} from 'react'
+import React,{ useReducer, useContext, useRef } from 'react'
 
 const reducer = (state, action) => {
-  switch (action.type)  {
+  switch (action.type) {
     case 'ADD':
       return [
         ...state,
@@ -11,210 +11,95 @@ const reducer = (state, action) => {
           completed: false
         }
       ]
-    case 'COMPLETE':
-      return state.map( t => {
-        if (t.id === action.id) {
-          t.completed = !t.completed
-        }
-      })
-    default: 
-      return state
+    case 'DELETE':
 
+      return state.filter( t  => action.id !== t.id )
+      
+    case 'COMPLETE': 
+      return state.map( t => {
+       (action.id === t.id) && (t.completed = !t.completed)
+       return t
+      })
+
+      
+
+      
+  
+    default:
+      return state    
   }
 }
 
 export default () => {
-  const [todos, dispatch] = useReducer( reducer, [
+  const [ todos, dispatch ] = useReducer( reducer, [
     {
       id: Date.now(),
-      text: 'Milk',
+      text: 'hello',
       completed: false
     }
   ])
   
+ 
   return (
     <div className="app-container">
-      <AddTodo dispatch={dispatch} todos={todos}/>
+      <AddTodo dispatch={dispatch}/>
       <TodoList dispatch={dispatch} todos={todos}/>
     </div>
   )
 }
 
-const AddTodo = ({dispatch}) => {
-  const inputRef = useRef()
-  const handleSubmit = e => {
-    e.preventDefault()
-    dispatch({
-      type: 'ADD',
-      text: inputRef.current.value
-    })
-    inputRef.current.value = ''
-
-  }
-  return (
-    <form action="" onSubmit={handleSubmit}>
-      <input type='text' ref={inputRef}/> 
-    </form>
-  )
-}
-
 const TodoList = ({todos, dispatch}) => {
-  const handleComplete =(e, x)  => {
-    e.preventDefault()
-    dispatch({
-      id: x,
-      type: 'COMPLETE'
-    })
-  }
-  return (
-    <div className='' >
-      {todos.map( t => (
+    const handleComplete = (e, x) => {
+      e.preventDefault()
+      dispatch({
+        id: x,
+        type: 'COMPLETE'
+      })
+    }
+    const handleDelete = (e, x) => {
+      e.preventDefault()
+      dispatch({
+        id: x,
+        type: 'DELETE'
+      })
+    }
+    return (
+    <div className=''> 
+      {todos.map( (t, i) => (
         <>
-          <h3 key={t.id}>{t.text}
-            <span onClick={e => handleComplete(e, t.id)}>✓</span>
-            <span>x</span>
-
-          </h3>
+        <h3 className={t.completed && 'crossed'}> {t.text} </h3>
+        <h3 onClick={e => handleComplete(e, t.id)} className='donex'>COMPLETED</h3>
+        <h3 onClick={e => handleDelete(e, t.id)} className='closex'>DELETE</h3>
         </>
       ))}
     </div>
-  )
+    )
+ 
 }
 
+const AddTodo = ({dispatch}) => {
+  
+  const inputRef = useRef()
+  
+  const handleAddTodo = (e) => {
+    e.preventDefault()
+   dispatch({
+     type: 'ADD',
+     text: inputRef.current.value
+   })
+   inputRef.current.value = ''
 
+  }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// import React,{ useReducer, useContext, useRef } from 'react'
-
-// const reducer = (state, action) => {
-//   switch (action.type) {
-//     case 'ADD':
-//       return [
-//         ...state,
-//         {
-//           id: Date.now(),
-//           text: action.text,
-//           complited: false
-//         }
-//       ]
-//     case 'DELETE':
-//       return state.filter( t  => action.id !== t.id )
-
-//     case 'COMPLETE': 
-//       return state.map( (t, i) => {
-//        if (action.id === t.id) {
-//         return (t.complited = true)
-//        } 
-//       })
-
+  return (
+    <div className='todo'>
+      <form onSubmit={handleAddTodo}>
+        <input type="text" ref={inputRef}/>
+      </form>
       
-
-      
-  
-//     default:
-//       return state    
-//   }
-// }
-
-// export default () => {
-//   const [ todos, dispatch ] = useReducer( reducer, [
-//     {
-//       id: Date.now(),
-//       text: 'hello',
-//       complited: false
-//     }
-//   ])
-  
- 
-//   return (
-//     <div className="app-container">
-//       <AddTodo dispatch={dispatch}/>
-//       <TodoList dispatch={dispatch} todos={todos}/>
-//     </div>
-//   )
-// }
-
-// const TodoList = ({todos, dispatch}) => {
-//     const handleComplete = (e, x) => {
-//       e.preventDefault()
-//       dispatch({
-//         id: x,
-//         type: 'COMPLETE'
-//       })
-//     }
-//     const handleDelete = (e, x) => {
-//       e.preventDefault()
-//       dispatch({
-//         id: x,
-//         type: 'DELETE'
-//       })
-//     }
-//     return (
-//     <div className=''> 
-//       {todos.map( (t, i) => (
-//         <>
-//         <h3 className={(t.complited === true) ? 'crossed' : ''}> {t.text} </h3>
-//         <h3 onClick={e => handleComplete(e, t.id)} className='donex'>COMPLETED</h3>
-//         <h3 onClick={e => handleDelete(e, t.id)} className='closex'>DELETE</h3>
-//         </>
-//       ))}
-//     </div>
-//     )
- 
-// }
-
-// const AddTodo = ({dispatch}) => {
-  
-//   const inputRef = useRef()
-  
-//   const handleAddTodo = (e) => {
-//     e.preventDefault()
-//    dispatch({
-//      type: 'ADD',
-//      text: inputRef.current.value
-//    })
-//    inputRef.current.value = ''
-
-//   }
-
-//   return (
-//     <div className='todo'>
-//       <form onSubmit={handleAddTodo}>
-//         <input type="text" ref={inputRef}/>
-//       </form>
-      
-//     </div>
-//   )
-// }
+    </div>
+  )
+}
 
 
 
