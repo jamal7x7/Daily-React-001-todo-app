@@ -1,13 +1,13 @@
-import React, { useEffect, useReducer, useRef, useState } from "react"
-import styled from "styled-components"
-import Layout from "../components/Layout"
-import { SidebarTab } from "../components/sidebar"
-import AddProjectButton from "../components/sidebar/AddProjectButton"
-import ProjectList from "../components/sidebar/ProjectList"
-import { MyProjectsProvider } from "../components/sidebar/ProjectsContext"
-import UserInfo from "../components/sidebar/UserInfo"
-import TodoList from "../components/TodoList"
-import { MyTodosProvider } from "../components/TodosContext"
+import React, { useEffect, useReducer, useRef, useState } from 'react'
+import styled from 'styled-components'
+import Layout from '../components/Layout'
+import { SidebarTab } from '../components/sidebar'
+import AddProjectButton from '../components/sidebar/AddProjectButton'
+import ProjectList from '../components/sidebar/ProjectList'
+import { MyProjectsProvider } from '../components/sidebar/ProjectsContext'
+import UserInfo from '../components/sidebar/UserInfo'
+import TodoList from '../components/TodoList'
+import { MyTodosProvider } from '../components/TodosContext'
 
 const Styles = styled.div`
   .wrapper {
@@ -24,13 +24,13 @@ const Styles = styled.div`
     display: grid;
     grid-template-columns: 250px 1fr;
     grid-template-rows: 1fr;
-    grid-template-areas: " sideBar  content ";
+    grid-template-areas: ' sideBar  content ';
   }
 
   // * /////////////////////////////////////////////SIDE-BAR/////////////////////////////////////////////// * //
 
   .sideBar {
-    grid-area: "sideBar";
+    grid-area: 'sideBar';
     background: ${({ theme }) => theme.colors.sideBar};
     border-radius: 4px 0 0 4px;
     display: grid;
@@ -59,7 +59,7 @@ const Styles = styled.div`
     margin-top: 20px;
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: auto auto auto auto;
+    grid-template-rows: auto auto 30px 170px auto;
     align-content: start;
     grid-gap: 10px;
     // height: 100%;
@@ -75,7 +75,7 @@ const Styles = styled.div`
   // * ///////////////////////////////////////CONTENT///////////////////////////////////// * //
 
   .content {
-    grid-area: "content";
+    grid-area: 'content';
     background: ${({ theme }) => theme.colors.bgd};
 
     overflow-anchor: none;
@@ -90,7 +90,7 @@ const Styles = styled.div`
 
 const reducer = (state, action) => {
   switch (action.type) {
-    case "ADD":
+    case 'ADD':
       return [
         ...state,
         {
@@ -100,7 +100,7 @@ const reducer = (state, action) => {
         }
       ]
 
-    case "COMPLETED":
+    case 'COMPLETED':
       return state.map(v => {
         if (v.id === action.id) {
           v = { ...v, completed: !v.completed }
@@ -108,13 +108,13 @@ const reducer = (state, action) => {
         return v
       })
 
-    case "REORDER":
+    case 'REORDER':
       return [...action.reorderedTodos]
 
-    case "DELETED":
+    case 'DELETED':
       return state.filter(v => v.id !== action.id)
 
-    case "RESET": {
+    case 'RESET': {
       console.log(action)
       return action.payload
     }
@@ -126,7 +126,7 @@ const reducer = (state, action) => {
 
 const projectsReducer = (state, action) => {
   switch (action.type) {
-    case "ADD_LIST":
+    case 'ADD_LIST':
       return [
         ...state,
         {
@@ -137,7 +137,7 @@ const projectsReducer = (state, action) => {
         }
       ]
 
-    case "DELETE_LIST":
+    case 'DELETE_LIST':
       return state.filter(v => v.id !== action.id)
 
     default:
@@ -155,27 +155,27 @@ const Index = () => {
   const [todos, dispatch] = useReducer(reducer, [
     {
       id: Date.now(),
-      text: "Read",
+      text: 'Read',
       // completed: true,
-      project: "default"
+      project: 'default'
     },
     {
       id: Date.now() + 1,
-      text: "Run",
+      text: 'Run',
       // completed: false,
-      project: "default"
+      project: 'default'
     },
     {
       id: Date.now() + 2,
-      text: "Pray",
+      text: 'Pray',
       // completed: false,
-      project: "default"
+      project: 'default'
     }
   ])
   const [projects, projectDispatch] = useReducer(projectsReducer, [
     {
       id: Date.now(),
-      projectName: "Design",
+      projectName: 'Design',
       totalTodos: 0,
       remainingTodos: 0
     }
@@ -183,9 +183,9 @@ const Index = () => {
 
   useEffect(() => {
     if (!didRun.current) {
-      const raw = localStorage.getItem("data")
+      const raw = localStorage.getItem('data')
       dispatch({
-        type: "RESET",
+        type: 'RESET',
         payload: JSON.parse(raw)
       })
       didRun.current = true
@@ -193,7 +193,7 @@ const Index = () => {
   })
 
   useEffect(() => {
-    localStorage.setItem("data", JSON.stringify(todos))
+    localStorage.setItem('data', JSON.stringify(todos))
   }, [todos])
 
   const handleCheckBox = (e, id) => {
@@ -201,7 +201,7 @@ const Index = () => {
     // console.log("done")
 
     dispatch({
-      type: "COMPLETED",
+      type: 'COMPLETED',
       id: id,
       completed: true
     })
@@ -236,10 +236,10 @@ const Index = () => {
       result.source.index,
       result.destination.index
     )
-    console.log("to", reorderedTodos)
+    console.log('to', reorderedTodos)
 
     dispatch({
-      type: "REORDER",
+      type: 'REORDER',
       reorderedTodos
     })
   }
@@ -253,15 +253,15 @@ const Index = () => {
       <Styles>
         <MyProjectsProvider value={{ projects, projectDispatch }}>
           <MyTodosProvider value={{ todos, dispatch }}>
-            <div className="wrapper">
-              <div className="sideBar">
+            <div className='wrapper'>
+              <div className='sideBar'>
                 <UserInfo />
 
-                <div className="sideBarList">
+                <div className='sideBarList'>
                   <SidebarTab>Todos</SidebarTab>
                   <SidebarTab>Calendar</SidebarTab>
 
-                  <div className="projects"> Projects </div>
+                  <div className='projects'> Projects </div>
 
                   <ProjectList
                     addListIsShown={addListIsShown}
@@ -277,7 +277,7 @@ const Index = () => {
                 </div>
               </div>
 
-              <div className="content">
+              <div className='content'>
                 <TodoList
                   // todos={todos}
                   handleOnDragEnd={handleOnDragEnd}

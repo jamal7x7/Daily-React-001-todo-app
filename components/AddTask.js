@@ -1,18 +1,10 @@
-import { lighten, rgba } from "polished"
-import React, { useContext, useState } from "react"
-import { animated, useSpring } from "react-spring"
-import styled from "styled-components"
-import FormTabContent from "../components/FormTabContent"
-import {
-  AddTaskSvg,
-  DatePickerSvg,
-  DeleteTaskSvg,
-  HexBorderSvg,
-  PrioritySvg,
-  ProjectSvg,
-  SubmitSvg
-} from "./svg"
-import { MyTodosContext } from "./TodosContext"
+import { lighten, rgba } from 'polished';
+import React, { useContext, useState } from 'react';
+import { animated, useSpring } from 'react-spring';
+import styled from 'styled-components';
+import FormTabContent from '../components/FormTabContent';
+import { AddTaskSvg, DatePickerSvg, DeleteTaskSvg, HexBorderSvg, PrioritySvg, ProjectSvg, SubmitSvg } from './svg';
+import { MyTodosContext } from './TodosContext';
 
 const Button = styled.button`
   border: none;
@@ -22,11 +14,11 @@ const Button = styled.button`
   font-size: 11px;
   font-weight: 800;
   cursor: pointer;
-  background: ${props => (props.primary ? "#8c4ef8" : "transparent")};
+  background: ${props => (props.primary ? '#8c4ef8' : 'transparent')};
   &:hover {
     color: #fff;
     background: ${props =>
-      props.primary ? lighten(0.05, "#8c4ef8") : "transparent"};
+      props.primary ? lighten(0.05, '#8c4ef8') : 'transparent'};
   }
 `
 
@@ -48,7 +40,7 @@ const AddTaskCard = styled.div`
     opacity: 1;
   }
   div {
-    grid-area: "dot";
+    grid-area: 'dot';
   }
   &:hover {
     color: ${({ theme }) => theme.colors.primary};
@@ -56,20 +48,24 @@ const AddTaskCard = styled.div`
 `
 
 const Dot = styled.div`
-  grid-area: "dot";
+  grid-area: 'dot';
 `
 
 const Icon = styled.div`
-  grid-area: "addIcon";
+  grid-area: 'addIcon';
   display: grid;
   place-items: center;
+  /* background: #000; */
+  .active {
+    background: #00f;
+  }
 `
 
 const AddText = styled.div`
   opacity: 1;
   margin-left: 16px;
   font-size: 14px;
-  grid-area: "addText";
+  grid-area: 'addText';
   /* background: #5a56f8; */
   display: grid;
   place-items: center left;
@@ -183,7 +179,7 @@ const AddTask = ({ addTaskIsShown, handleSubmit, handleAddTask, inputRef }) => {
   // }))
 
   const [state, toggle] = useState(false)
-  const [tab, setTab] = useState("projectTab")
+  const [tab, setTab] = useState('projectTab')
 
   const p = useSpring({
     // opacity: state ? 1 : 0,
@@ -199,10 +195,10 @@ const AddTask = ({ addTaskIsShown, handleSubmit, handleAddTask, inputRef }) => {
 
   const fip = useSpring({
     opacity: state ? 1 : 0,
-    transformOrigin: "left",
+    transformOrigin: 'left',
     transform: state
-      ? "scaleX(1) translateX(0px)  "
-      : "scaleX(0.9) translateX(-20px) ",
+      ? 'scaleX(1) translateX(0px)  '
+      : 'scaleX(0.9) translateX(-20px) ',
 
     config: { mass: 1, tension: 500, friction: 30, clamp: false }
     // onRest: () => inputRef.current.focus()
@@ -214,10 +210,10 @@ const AddTask = ({ addTaskIsShown, handleSubmit, handleAddTask, inputRef }) => {
     //   ? "scale(1) translateY(0px) "
     //   : "scale(1) translateY(-10px) ",
 
-    transformOrigin: "top",
+    transformOrigin: 'top',
     transform: state
-      ? "scaleY(1) translateY(0px)  "
-      : "scaleY(0.9) translateY(-20px) ",
+      ? 'scaleY(1) translateY(0px)  '
+      : 'scaleY(0.9) translateY(-20px) ',
 
     config: { mass: 1, tension: 500, friction: 30, clamp: false },
     delay: 150
@@ -229,10 +225,10 @@ const AddTask = ({ addTaskIsShown, handleSubmit, handleAddTask, inputRef }) => {
     //   ? "scale(1) translateY(0px) "
     //   : "scale(1) translateY(-10px) ",
 
-    transformOrigin: "top",
+    transformOrigin: 'top',
     transform: !state
-      ? "scaleY(1) translateX(0px)  "
-      : "scaleY(1) translateX(10px) ",
+      ? 'scaleY(1) translateX(0px)  '
+      : 'scaleY(1) translateX(10px) ',
 
     config: { mass: 1, tension: 500, friction: 30 }
   })
@@ -244,22 +240,24 @@ const AddTask = ({ addTaskIsShown, handleSubmit, handleAddTask, inputRef }) => {
     // console.log("done")
 
     dispatch({
-      type: "DELETED",
+      type: 'DELETED',
       id: id
     })
   }
 
   const handleProjectTab = (e, id) => {
     e.preventDefault()
-    const n = e.currentTarget.getAttribute("name")
-    setTab()
+    const pt = document.getElementsByClassName('')
+    e.currentTarget.classList.toggle('active')
+    const n = e.currentTarget.getAttribute('name')
+    setTab(p => ({ ...p, name: n }))
     // console.log(p => (p = n))
-    // console.log(tab.name)
+    console.log(typeof n)
   }
 
   const handlePriorityTab = (e, id) => {
     e.preventDefault()
-    const n = e.currentTarget.getAttribute("name")
+    const n = e.currentTarget.getAttribute('name')
     setTab(p => ({ ...p, name: n }))
     // console.log(n)
     // console.log(tab.name)
@@ -267,13 +265,11 @@ const AddTask = ({ addTaskIsShown, handleSubmit, handleAddTask, inputRef }) => {
 
   const handleDatePickerTab = (e, id) => {
     e.preventDefault()
-    const n = e.currentTarget.getAttribute("name")
+    const n = e.currentTarget.getAttribute('name')
     setTab(p => ({ ...p, name: n }))
     // console.log(n)
     // console.log(tab.name)
   }
-
-  console.log(tab.name)
 
   return (
     <>
@@ -317,7 +313,7 @@ const AddTask = ({ addTaskIsShown, handleSubmit, handleAddTask, inputRef }) => {
                 <Input
                   autoFocus
                   ref={inputRef}
-                  placeholder="Enter your task here..."
+                  placeholder='Enter your task here...'
                 />
                 <Icon onClick={e => handleDeleteTodo(e)}>
                   <DeleteTaskSvg />
@@ -326,7 +322,7 @@ const AddTask = ({ addTaskIsShown, handleSubmit, handleAddTask, inputRef }) => {
             </animated.div>
             <animated.div style={fbp}>
               <Card>
-                <div className="FormContent">
+                <div className='FormContent'>
                   <FormTabContent tab={tab} />
                 </div>
                 <div>
@@ -334,19 +330,19 @@ const AddTask = ({ addTaskIsShown, handleSubmit, handleAddTask, inputRef }) => {
                 </div>
 
                 <FormBtns>
-                  <Icon name="projectTab" onClick={e => handleProjectTab(e)}>
-                    <ProjectSvg tab={tab.name} />
+                  <Icon name='projectTab' onClick={e => handleProjectTab(e)}>
+                    <ProjectSvg />
                   </Icon>
-                  <Icon name="priorityTab" onClick={e => handlePriorityTab(e)}>
+                  <Icon name='priorityTab' onClick={e => handlePriorityTab(e)}>
                     <PrioritySvg />
                   </Icon>
                   <Icon
-                    name="datePickerTab"
+                    name='datePickerTab'
                     onClick={e => handleDatePickerTab(e)}
                   >
                     <DatePickerSvg />
                   </Icon>
-                  <Icon className="big-svg" onClick={e => handleSubmit(e)}>
+                  <Icon className='big-svg' onClick={e => handleSubmit(e)}>
                     <SubmitSvg />
                   </Icon>
                 </FormBtns>

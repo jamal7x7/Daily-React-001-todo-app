@@ -1,4 +1,25 @@
 {
-	"editor.formatOnPaste": false,
-	"editor.formatOnSave": true
+  // ! //////////////////////////COLORS//////////////////////////
+
+  "workbench.colorCustomizations": {
+    // "editor.background": "#1b1d29",
+    // "editor.background": "#272754",
+    // "editor.background": "#2C2A59",
+    // "editor.background": "#1C1A2B",
+    "editor.background": "#282541",
+
+    /////////////////////////////////////////////
+
+    "editorCursor.foreground": "#5900ff",
+
+    ////////////////////////////////////////////
+
+    "statusBar.background": "#5900ff11",
+    // "statusBar.background": "#1C1A2B",
+    // "statusBar.background": "#ff00d4",
+    // "statusBar.background": "#00C7A6",
+    // "statusBar.border": "#5900ff",
+    // "statusBar.foreground": "#1C1A2B",
+    "statusBar.foreground": "#ffffff55"
+  }
 }

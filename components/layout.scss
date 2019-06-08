@@ -34,7 +34,7 @@ body,
   background-color: $bgl;
   color: $text;
 
-  --ff: Roboto, montserrat, "Fira Sans", sans-serif;
+  --ff: Roboto, montserrat, 'Fira Sans', sans-serif;
 
   --fw-n: 300;
   --fw-m: 600;
@@ -91,13 +91,13 @@ html {
   grid-template-columns: 1fr;
   grid-template-rows: 80px 1fr 80px;
   grid-template-areas:
-    "header"
-    "container"
-    "footer";
+    'header'
+    'container'
+    'footer';
 }
 
 .header {
-  grid-area: "header";
+  grid-area: 'header';
   display: grid;
   place-items: center center;
 }
@@ -116,13 +116,13 @@ a {
 }
 
 .footer {
-  grid-area: "footer";
+  grid-area: 'footer';
   display: grid;
   place-items: center center;
 }
 
 .container {
-  grid-area: "container";
+  grid-area: 'container';
 
   // background: $bgl;
   display: grid;
@@ -153,6 +153,10 @@ g {
   transform-origin: 50% 50%;
 }
 
-svg:hover {
-  fill: $bgm;
+// svg:hover {
+//   fill: $bgm;
+// }
+.active {
+  background: red;
+  // display: none;
 }
