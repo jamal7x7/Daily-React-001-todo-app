@@ -1,0 +1,119 @@
+$bg: #1d1c23;
+$bgl: #073175;
+$bgm: #062659;
+$bgd: #041a3e;
+$bgdl: #4c5f7e;
+
+$primary: #db8eda;
+$aux: #42a3f9;
+
+$text: #eee;
+
+$bluew: #5e85c3;
+$pink: #dd8eda;
+$marron: #3a3a3a;
+
+$react-blue: #61dafb;
+$react-dark-blue: #0084ff;
+
+$primary2: #8c4ef8;
+$aux2: #5a56f8;
+$bg2: #0c0421;
+
+$p-font: Merriweather;
+
+$grad: linear-gradient(225deg, $primary -11%, $aux 100%);
+$gradl: linear-gradient(225deg, $primary -30%, $aux 100%);
+
+:root {
+  --ff: montserrat, "Fira Sans", sans-serif;
+
+  --fw-n: 300;
+  --fw-m: 600;
+  --fw-b: 800;
+
+  --fs-2: 5rem;
+  --fs-p: 1rem;
+
+  --primary-clr: #225560;
+  --secondary-clr: #36213e;
+  --secondary-clr-light: #554971;
+  --accent-clr: #ef6461;
+
+  --spacer: 1rem;
+  --spacer-md: calc(var(--spacer) * 2);
+  --spacer-lg: calc(var(--spacer) * 3);
+
+  --shadow: 0 0 1em rgba(0, 0, 0, 0.25);
+  --br: 5px;
+}
+
+// .content {
+//   form {
+//     margin-left: 56px;
+//     margin-bottom: 10px;
+//     padding: 25px;
+//     background: rgba($bgm, 0.3);
+//     width: 80%;
+//     box-shadow: 0 90px 100px -50px rgba(black, 0.4),
+//       0 50px 70px 10px rgba(black, 0.1);
+
+//     input {
+//       box-sizing: border-box;
+//       padding: 13px 16px;
+//       width: 100%;
+//       border: 0 solid $bgl;
+//       background: #00000033;
+//       color: $text;
+//       font-size: 16px;
+//       outline: none;
+//       margin-bottom: 16px;
+//     }
+
+// .addBtn {
+//   background: $primary2;
+// }
+// .cancelBtn {
+//   background: transparent;
+// }
+// button {
+//   border: none;
+//   color: $text;
+//   border-radius: 4px;
+//   padding: 13px 20px;
+//   font-size: 11px;
+//   font-weight: 800;
+// }
+//   }
+// }
+
+// .addTaskCard {
+//   // background: #0084ff;
+//   cursor: pointer;
+//   display: grid;
+//   grid-template-columns: 56px 40px 1fr;
+//   grid-template-rows: 1fr;
+
+//   opacity: 0.3;
+//   &:hover {
+//     opacity: 1;
+//   }
+//   .dot {
+//     grid-area: "dot";
+//   }
+//   .addIcon {
+//     grid-area: "addIcon";
+//     display: grid;
+//     place-items: center;
+//   }
+//   .addText {
+//     margin-left: 16px;
+//     grid-area: "addText";
+//     display: grid;
+//     place-items: center left;
+//     // background: #5a56f8;
+//     &:hover {
+//       color: $primary2;
+//     }
+//   }
+// }
