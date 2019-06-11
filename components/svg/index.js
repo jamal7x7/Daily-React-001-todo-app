@@ -1,4 +1,5 @@
 import AddTaskSvg from './AddTaskSvg'
+import AvatarSvg from './AvatarSvg'
 import CancelTaskSvg from './CancelTaskSvg'
 import CheckBoxSvg from './CheckBoxSvg'
 import DatePickerSvg from './DatePickerSvg'
@@ -9,6 +10,7 @@ import MenuCloseSvg from './MenuCloseSvg'
 import PrioritySvg from './PrioritySvg'
 import ProjectSvg from './ProjectSvg'
 import SubmitSvg from './SubmitSvg'
+import UserSettingsMenuSvg from './UserSettingsMenuSvg'
 
 export {
   HexBorderSvg,
@@ -18,8 +20,10 @@ export {
   DatePickerSvg,
   PrioritySvg,
   ProjectSvg,
-  SubmitSvg,
+  AvatarSvg,
   GrabSvg,
   CheckBoxSvg,
-  MenuCloseSvg
+  MenuCloseSvg,
+  UserSettingsMenuSvg,
+  SubmitSvg
 }

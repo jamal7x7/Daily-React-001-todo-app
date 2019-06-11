@@ -94,5 +94,9 @@ g {
 .active___2ugN7 {
   background: red; }
 
+p {
+  padding: 0;
+  margin: 0; }
+
 
 /*# sourceMappingURL=styles.chunk.css.map*/

@@ -1,5 +1,5 @@
-import React from "react"
-import styled from "styled-components"
+import React from 'react'
+import styled from 'styled-components'
 
 const Styles = styled.div`
   .addProject {
@@ -9,7 +9,7 @@ const Styles = styled.div`
 
     margin-left: 50px;
     // height: 10px;
-    border-top: 1px solid #eeeeee20;
+
     color: #eeeeee40;
     cursor: pointer;
     /* box-sizing: inside-box; */
@@ -34,7 +34,7 @@ const Styles = styled.div`
   }
 
   .todoNum {
-    grid-area: "TodoNum";
+    grid-area: 'TodoNum';
     display: grid;
     place-items: center;
     background: #8c4ef8;

@@ -1,5 +1,5 @@
-import React from "react"
-import styled from "styled-components"
+import React from 'react'
+import styled from 'styled-components'
 
 const Styles = styled.div`
   .todoSideBtn {
@@ -41,10 +41,10 @@ const Styles = styled.div`
 
 const SidebarTab = ({ children }) => (
   <Styles>
-    <div className="todoSideBtn">
-      <div className="sideBtn">
-        <div className="todoSideBtnLabel"> {children} </div>
-        <div className="todoSideBtnNum">3</div>
+    <div className='todoSideBtn'>
+      <div className='sideBtn'>
+        <div className='todoSideBtnLabel'> {children} </div>
+        <div className='todoSideBtnNum'>3</div>
       </div>
     </div>
   </Styles>
