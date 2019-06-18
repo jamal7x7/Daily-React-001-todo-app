@@ -1,3 +1,4 @@
+import { rgba } from 'polished'
 import React, { useEffect, useReducer, useRef, useState } from 'react'
 import styled from 'styled-components'
 import Layout from '../components/Layout'
@@ -7,6 +8,17 @@ import TodoList from '../components/TodoList'
 import { MyTodosProvider } from '../components/TodosContext'
 
 const Styles = styled.div`
+  .info-header {
+    background: ${({ theme }) => rgba(theme.colors.bgd, 0.4)};
+    /* background: black; */
+    /* opacity: 0.3; */
+
+    position: sticky;
+    backdrop-filter: blur(4px);
+    /* backdrop-filter: blur(4px) saturate(180%);  */
+    top: 0;
+    z-index: 1000;
+  }
   /* height: 100%; */
   .wrapper {
     width: 100%;
@@ -21,6 +33,8 @@ const Styles = styled.div`
     grid-template-columns: 250px 1fr;
     grid-template-rows: 1fr;
     grid-template-areas: ' sideBar  content ';
+
+    position: relative;
   }
 
   // * /////////////////////////////////////////////SIDE-BAR/////////////////////////////////////////////// * //

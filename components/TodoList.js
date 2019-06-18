@@ -1,32 +1,37 @@
-import { darken, rgba } from "polished"
-import React, { useContext, useRef } from "react"
-import { DragDropContext, Droppable } from "react-beautiful-dnd"
-import styled from "styled-components"
-import AddTask from "./AddTask"
-import InfoHeader from "./InfoHeader"
-import TodoCard from "./TodoCard"
-import { MyTodosContext } from "./TodosContext"
+import { darken, rgba } from 'polished'
+import React, { useContext, useRef } from 'react'
+import { DragDropContext, Droppable } from 'react-beautiful-dnd'
+import styled from 'styled-components'
+import InfoHeader from '../components/InfoHeader'
+import AddTask from './AddTask'
+import TodoRow from './TodoRow'
+import { MyTodosContext } from './TodosContext'
 
 const Styles = styled.section`
+top: -200px;
   .scroll {
     height: 600px;
     // background: #000;
     overflow: scroll;
+  }
+
+  .info-header {
+    background: ${({ theme }) => rgba(theme.colors.bgd, 0.4)};
+    /* background: black; */
+    /* opacity: 0.3; */
+
+    position: sticky;
+    backdrop-filter: blur(4px);
+    /* backdrop-filter: blur(4px) saturate(180%);  */
+    top: 0;
+    z-index: 1000;
   }
    
 svg {
   z-index: 300;
 }
 
-  .info-header {
-    background: ${({ theme }) => rgba(theme.colors.bgd, 0.8)};
-    
-    position: sticky;
-    backdrop-filter: blur(4px); 
-    /* backdrop-filter: blur(4px) saturate(180%);  */
-    top: 0;
-    z-index: 1000;
-  }
+ 
 
   .list {
     // margin: 80px;
@@ -124,38 +129,38 @@ const TodoList = ({
     const text = inputRef.current.value
     if (text) {
       dispatch({
-        type: "ADD",
+        type: 'ADD',
         text: text,
         id: Date.now(),
         completed: false
       })
     }
 
-    inputRef.current.value = ""
+    inputRef.current.value = ''
   }
 
   return (
     <Styles>
-      <div className="scroll">
-        <div className="info-header">
+      <div className='scroll'>
+        <div className='info-header'>
           <InfoHeader />
         </div>
 
-        <div className="list">
+        <div className='list'>
           <DragDropContext onDragEnd={handleOnDragEnd}>
-            <Droppable droppableId="droppable">
+            <Droppable droppableId='droppable'>
               {(provided, snapshot) => (
                 <div
                   {...provided.droppableProps}
                   ref={provided.innerRef}
                   className={
                     snapshot.isDraggingOver
-                      ? "draging-over"
-                      : "not-draging-over"
+                      ? 'draging-over'
+                      : 'not-draging-over'
                   }
                 >
                   {todos.map((t, i) => (
-                    <TodoCard
+                    <TodoRow
                       {...t}
                       handleCheckBox={handleCheckBox}
                       // handleDeleteTodo={handleDeleteTodo}

@@ -3,12 +3,12 @@ import styled from 'styled-components'
 
 const Styles = styled.div`
   
-  
+ 
+  /* position: absolute; */
 
   .options-content {
     /* display: none; */
    
-    position: absolute;
     background-color: ${({ theme }) => theme.colors.bgl};
     border-radius: 8px;
     min-width: 200px;
@@ -22,6 +22,7 @@ const Styles = styled.div`
       grid-template-columns: 40px 1fr;
       grid-template-rows: auto;
       align-items: center;
+      cursor: pointer;
     }
     
     .options-content-text:hover {

@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 5);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -119,7 +119,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "/Users/j/Desktop/todo-app/components/AddTask.js";
+var _jsxFileName = "/Users/j/Desktop/pro-todo-app/components/AddTask.js";
 
 function _templateObject11() {
   var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_2__["default"])(["\n  margin-bottom: -20px;\n  display: grid;\n  grid-template-columns: 40px 40px 40px 1fr;\n  grid-template-rows: 1fr;\n  place-items: center start;\n  position: relative;\n\n  .big-svg {\n    top: -30px;\n    justify-self: end;\n    position: absolute;\n    justify-self: end;\n    cursor: pointer;\n    &:hover {\n      transform: scale(1.03);\n      svg > path {\n        fill: ", ";\n      }\n    }\n  }\n"]);
@@ -662,7 +662,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _layout_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./layout.scss */ "./components/layout.scss");
 /* harmony import */ var _layout_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_layout_scss__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "/Users/j/Desktop/todo-app/components/Footer.js";
+var _jsxFileName = "/Users/j/Desktop/pro-todo-app/components/Footer.js";
 
 
 /* eslint-disable react/react-in-jsx-scope */
@@ -707,7 +707,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _sidebar_ProjectsContext__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./sidebar/ProjectsContext */ "./components/sidebar/ProjectsContext.js");
 
-var _jsxFileName = "/Users/j/Desktop/todo-app/components/FormTabContent.js";
+var _jsxFileName = "/Users/j/Desktop/pro-todo-app/components/FormTabContent.js";
 
 function _templateObject() {
   var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  .projectListAndForm {\n    /* overflow: auto; */\n\n    /* height: 255px; */\n    /* width: 170px; */\n    /* overflow-x: scroll; */\n\n    .projectList {\n      display: inline-flex;\n      /* flex-basis: 100px; */\n      /* flex-wrap: wrap; */\n      padding: 8px;\n      .chooseProject {\n        display: grid;\n        grid-template-columns: auto auto;\n        grid-template-rows: 24px;\n        /* background-color: red; */\n\n        padding: 4px 16px;\n        margin-right: 8px;\n        box-sizing: border-box;\n        border: 2px solid #07317544;\n        border-radius: 20px;\n        color: ", ";\n        cursor: pointer;\n\n        &:hover {\n          color: #ff00f5;\n          background: #073175;\n        }\n        &:hover .projectNum {\n          // background: #8c4ef8;\n          color: #ff00f5;\n        }\n        .projectIcon {\n          display: grid;\n          place-items: center start;\n        }\n        .projectText {\n          display: flex;\n          justify-content: space-between;\n          align-items: center;\n\n          padding-left: 10px;\n          font-size: 14px;\n          /* overflow-x: auto; */\n        }\n        .projectNum {\n          display: grid;\n          place-items: center;\n          font-size: 12px;\n          color: #eeeeee33;\n        }\n      }\n    }\n  }\n\n  input {\n    /* box-sizing: border-box; */\n\n    width: 100%;\n    border: 0 solid #073175;\n    background: #00000000;\n    color: ", ";\n    // font-size: 16px;\n    outline: none;\n    // margin-bottom: 16px;\n  }\n\n  .projectListForm {\n    display: grid;\n    grid-template-columns: auto 140px;\n    grid-template-rows: auto;\n\n    padding-left: 50px;\n    height: 52px;\n    margin-top: -10px;\n    color: rgba($text, 0.5);\n    cursor: pointer;\n\n    &:hover {\n      color: #ff00f5;\n      background: #00000020;\n    }\n    &:hover .projectNum {\n      // background: $primary2;\n      color: #ff00f5;\n    }\n    .projectIcon {\n      display: grid;\n      place-items: center;\n    }\n    .projectText {\n      display: flex;\n      justify-content: space-between;\n      align-items: center;\n      color: ", ";\n\n      padding-left: 10px;\n      font-size: 14px;\n      form {\n        input {\n          font-size: 14px;\n          color: #ff00f5;\n        }\n      }\n    }\n    /* .projectNum {\n      display: grid;\n      place-items: center;\n      font-size: 12px;\n      color: #eeeeee33;\n    } */\n  }\n"]);
@@ -845,7 +845,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _layout_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./layout.scss */ "./components/layout.scss");
 /* harmony import */ var _layout_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_layout_scss__WEBPACK_IMPORTED_MODULE_2__);
-var _jsxFileName = "/Users/j/Desktop/todo-app/components/Header.js";
+var _jsxFileName = "/Users/j/Desktop/pro-todo-app/components/Header.js";
 
 
 /* eslint-disable react/react-in-jsx-scope */
@@ -920,7 +920,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-components */ "styled-components");
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_2__);
 
-var _jsxFileName = "/Users/j/Desktop/todo-app/components/InfoHeader.js";
+var _jsxFileName = "/Users/j/Desktop/pro-todo-app/components/InfoHeader.js";
 
 function _templateObject() {
   var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  .info {\n    height: 140px;\n    font-size: 12px;\n    display: grid;\n    grid-template-columns: 72px 40px 1fr;\n\n    /* filter: url('/media/blur.svg#blur'); */\n    /* filter: blur(10px); */\n    /* position: relative; */\n    /* background: #eeeeee10; */\n\n    z-index: 3;\n    /* box-shadow: 0 100px 100px -50px #0000001e, 0 10px 70px 10px #0000001e; */\n\n    .dot {\n      /* // background: #000; */\n    }\n    .todayIcon {\n      /* // background: rgb(255, 157, 157); */\n    }\n    .todayInfo {\n      /* // background: red; */\n      display: grid;\n      place-items: center start;\n      /* // margin-top: 40px; */\n\n      .todayInfoWrapper {\n        height: 40px;\n        width: 100%;\n        /* //padding-left: 16px; */\n        display: grid;\n        grid-template-columns: 3fr 1fr 60px;\n        border-bottom: 1px solid #8c4ef870;\n        .todayInfoText {\n          color: rgba(#eee, 0.3);\n          /* color: rgba(#8c4ef8, 0.7); */\n          font-weight: 600;\n        }\n        .todayInfoDate {\n          color: #8c4ef8ee;\n          justify-self: end;\n        }\n        .dot {\n          /* background: #000; */\n        }\n      }\n    }\n  }\n"]);
@@ -1022,7 +1022,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Header__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Header */ "./components/Header.js");
 /* harmony import */ var _layout_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./layout.scss */ "./components/layout.scss");
 /* harmony import */ var _layout_scss__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_layout_scss__WEBPACK_IMPORTED_MODULE_3__);
-var _jsxFileName = "/Users/j/Desktop/todo-app/components/Layout.js";
+var _jsxFileName = "/Users/j/Desktop/pro-todo-app/components/Layout.js";
 
 
 /* eslint-disable react/react-in-jsx-scope */
@@ -1068,10 +1068,221 @@ function Layout(props) {
 
 /***/ }),
 
-/***/ "./components/TodoCard.js":
+/***/ "./components/TodoList.js":
 /*!********************************!*\
-  !*** ./components/TodoCard.js ***!
+  !*** ./components/TodoList.js ***!
   \********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/extends */ "./node_modules/@babel/runtime-corejs2/helpers/esm/extends.js");
+/* harmony import */ var _babel_runtime_corejs2_core_js_date_now__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/date/now */ "./node_modules/@babel/runtime-corejs2/core-js/date/now.js");
+/* harmony import */ var _babel_runtime_corejs2_core_js_date_now__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_date_now__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/taggedTemplateLiteral */ "./node_modules/@babel/runtime-corejs2/helpers/esm/taggedTemplateLiteral.js");
+/* harmony import */ var polished__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! polished */ "polished");
+/* harmony import */ var polished__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(polished__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var react_beautiful_dnd__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-beautiful-dnd */ "react-beautiful-dnd");
+/* harmony import */ var react_beautiful_dnd__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react_beautiful_dnd__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! styled-components */ "styled-components");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _components_InfoHeader__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../components/InfoHeader */ "./components/InfoHeader.js");
+/* harmony import */ var _AddTask__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./AddTask */ "./components/AddTask.js");
+/* harmony import */ var _TodoRow__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./TodoRow */ "./components/TodoRow.js");
+/* harmony import */ var _TodosContext__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./TodosContext */ "./components/TodosContext.js");
+
+
+
+var _jsxFileName = "/Users/j/Desktop/pro-todo-app/components/TodoList.js";
+
+function _templateObject2() {
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_2__["default"])(["\n  background-color: ", ";\n"]);
+
+  _templateObject2 = function _templateObject2() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject() {
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_2__["default"])(["\ntop: -200px;\n  .scroll {\n    height: 600px;\n    // background: #000;\n    overflow: scroll;\n  }\n\n  .info-header {\n    background: ", ";\n    /* background: black; */\n    /* opacity: 0.3; */\n\n    position: sticky;\n    backdrop-filter: blur(4px);\n    /* backdrop-filter: blur(4px) saturate(180%);  */\n    top: 0;\n    z-index: 1000;\n  }\n   \nsvg {\n  z-index: 300;\n}\n\n \n\n  .list {\n    // margin: 80px;\n    // background: red;\n    margin-top: 20px;\n  }\n  \n  .options:hover .deleteIcon {\n    fill: ", ";;\n    opacity: 1;\n  }\n\n  .options-dropdown {\n    position: relative;\n    /* display: inline-block; */\n    z-index: 200;\n    \n  }\n  .options-content {\n    /* display: none; */\n    right: 10px;\n    top: 20px;\n    position: absolute;\n    background-color: ", ";\n    border-radius: 8px;\n    min-width: 200px;\n    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);\n    display: block;\n    z-index: 1;\n\n    \n\n    .options-content-text {\n      padding: 16px;\n      display: grid;\n      grid-template-columns: 40px 1fr;\n      grid-template-rows: auto;\n      align-items: center;\n    }\n    .options-content-text:hover {\n      background:#00000020;\n      /* color:", ";  */\n      color: ", "; \n      /* background: ", ";  */\n      \n    }\n\n    \n  }\n\n    .draging-over {\n      background-color: ", "; \n    }\n\n    .not-draging-over {\n      background-color: ", "; \n    }\n    \n  }\n  /* .options-dropdown:hover .options-content {\n    display: block;\n  } */\n"]);
+
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+
+
+
+
+
+
+
+
+
+var Styles = styled_components__WEBPACK_IMPORTED_MODULE_6___default.a.section(_templateObject(), function (_ref) {
+  var theme = _ref.theme;
+  return Object(polished__WEBPACK_IMPORTED_MODULE_3__["rgba"])(theme.colors.bgd, 0.4);
+}, function (_ref2) {
+  var theme = _ref2.theme;
+  return theme.colors.primary;
+}, function (_ref3) {
+  var theme = _ref3.theme;
+  return theme.colors.bgm;
+}, function (_ref4) {
+  var theme = _ref4.theme;
+  return theme.colors.primary;
+}, function (_ref5) {
+  var theme = _ref5.theme;
+  return theme.colors.text;
+}, function (_ref6) {
+  var theme = _ref6.theme;
+  return theme.colors.primary;
+}, function (_ref7) {
+  var theme = _ref7.theme;
+  return theme.colors.bgm;
+}, function (_ref8) {
+  var theme = _ref8.theme;
+  return theme.colors.bgd;
+});
+var CardContainer = styled_components__WEBPACK_IMPORTED_MODULE_6___default.a.div(_templateObject2(), function (props) {
+  return props.isDragging ? function (_ref9) {
+    var theme = _ref9.theme;
+    return Object(polished__WEBPACK_IMPORTED_MODULE_3__["darken"])(0.02, theme.colors.bgd);
+  } : function (_ref10) {
+    var theme = _ref10.theme;
+    return theme.colors.bgd;
+  };
+});
+
+var TodoList = function TodoList(_ref11) {
+  var handleOnDragEnd = _ref11.handleOnDragEnd,
+      handleCheckBox = _ref11.handleCheckBox,
+      addTaskIsShown = _ref11.addTaskIsShown,
+      handleAddTask = _ref11.handleAddTask;
+  // const props = useSpring({
+  //   opacity: 1,
+  //   // transform: ${props => scale(1.3)},
+  //   from: { opacity: 0 },
+  //   config: { duration: 250 }
+  // })
+  var inputRef = Object(react__WEBPACK_IMPORTED_MODULE_4__["useRef"])();
+
+  var _useContext = Object(react__WEBPACK_IMPORTED_MODULE_4__["useContext"])(_TodosContext__WEBPACK_IMPORTED_MODULE_10__["MyTodosContext"]),
+      todos = _useContext.todos,
+      dispatch = _useContext.dispatch;
+
+  var handleSubmit = function handleSubmit(e) {
+    e.preventDefault();
+    var text = inputRef.current.value;
+
+    if (text) {
+      dispatch({
+        type: 'ADD',
+        text: text,
+        id: _babel_runtime_corejs2_core_js_date_now__WEBPACK_IMPORTED_MODULE_1___default()(),
+        completed: false
+      });
+    }
+
+    inputRef.current.value = '';
+  };
+
+  return react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(Styles, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 143
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("div", {
+    className: "scroll",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 144
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("div", {
+    className: "info-header",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 145
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_components_InfoHeader__WEBPACK_IMPORTED_MODULE_7__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 146
+    },
+    __self: this
+  })), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("div", {
+    className: "list",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 149
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(react_beautiful_dnd__WEBPACK_IMPORTED_MODULE_5__["DragDropContext"], {
+    onDragEnd: handleOnDragEnd,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 150
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(react_beautiful_dnd__WEBPACK_IMPORTED_MODULE_5__["Droppable"], {
+    droppableId: "droppable",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 151
+    },
+    __self: this
+  }, function (provided, snapshot) {
+    return react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("div", Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, provided.droppableProps, {
+      ref: provided.innerRef,
+      className: snapshot.isDraggingOver ? 'draging-over' : 'not-draging-over',
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 153
+      },
+      __self: this
+    }), todos.map(function (t, i) {
+      return react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_TodoRow__WEBPACK_IMPORTED_MODULE_9__["default"], Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, t, {
+        handleCheckBox: handleCheckBox // handleDeleteTodo={handleDeleteTodo}
+        ,
+        i: i,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 163
+        },
+        __self: this
+      }));
+    }), provided.placeholder);
+  }))), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_AddTask__WEBPACK_IMPORTED_MODULE_8__["default"], {
+    addTaskIsShown: addTaskIsShown,
+    inputRef: inputRef,
+    handleAddTask: handleAddTask,
+    handleSubmit: handleSubmit,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 177
+    },
+    __self: this
+  })));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (TodoList);
+
+/***/ }),
+
+/***/ "./components/TodoRow.js":
+/*!*******************************!*\
+  !*** ./components/TodoRow.js ***!
+  \*******************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -1090,12 +1301,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_spring__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(react_spring__WEBPACK_IMPORTED_MODULE_6__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! styled-components */ "styled-components");
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var _components_svg__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../components/svg */ "./components/svg/index.js");
+/* harmony import */ var _svg__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./svg */ "./components/svg/index.js");
 /* harmony import */ var _TodosContext__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./TodosContext */ "./components/TodosContext.js");
 
 
 
-var _jsxFileName = "/Users/j/Desktop/todo-app/components/TodoCard.js";
+var _jsxFileName = "/Users/j/Desktop/pro-todo-app/components/TodoRow.js";
 
 function _templateObject2() {
   var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_2__["default"])(["\n  background-color: ", ";\n"]);
@@ -1203,7 +1414,7 @@ var TodoCard = function TodoCard(_ref18) {
     e.preventDefault(); // console.log("done")
 
     dispatch({
-      type: "DELETED",
+      type: 'DELETED',
       id: id
     });
     setOptionsMenuIsShown(function (prev) {
@@ -1218,7 +1429,7 @@ var TodoCard = function TodoCard(_ref18) {
 
   var sp = Object(react_spring__WEBPACK_IMPORTED_MODULE_6__["useSpring"])({
     // opacity: optionsMenuIsShown ? 1 : 0,
-    transform: optionsMenuIsShown ? "scale(1)" : "scale(0.1)",
+    transform: optionsMenuIsShown ? 'scale(1)' : 'scale(0.1)',
     // from: { opacity: 0 },
     // color: !optionsMenuIsShown ? "tomato" : "#8c4ef8",
     // config: { duration: 150 },
@@ -1271,7 +1482,7 @@ var TodoCard = function TodoCard(_ref18) {
         lineNumber: 236
       },
       __self: this
-    }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_components_svg__WEBPACK_IMPORTED_MODULE_8__["GrabSvg"], {
+    }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_svg__WEBPACK_IMPORTED_MODULE_8__["GrabSvg"], {
       __source: {
         fileName: _jsxFileName,
         lineNumber: 237
@@ -1287,14 +1498,14 @@ var TodoCard = function TodoCard(_ref18) {
         lineNumber: 240
       },
       __self: this
-    }, completed ? react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_components_svg__WEBPACK_IMPORTED_MODULE_8__["CheckBoxSvg"], {
+    }, completed ? react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_svg__WEBPACK_IMPORTED_MODULE_8__["CheckBoxSvg"], {
       __source: {
         fileName: _jsxFileName,
         lineNumber: 241
       },
       __self: this
-    }) : react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_components_svg__WEBPACK_IMPORTED_MODULE_8__["HexBorderSvg"], {
-      color: "red",
+    }) : react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_svg__WEBPACK_IMPORTED_MODULE_8__["HexBorderSvg"], {
+      color: 'red',
       __source: {
         fileName: _jsxFileName,
         lineNumber: 241
@@ -1663,217 +1874,6 @@ var TodoCard = function TodoCard(_ref18) {
 
 /***/ }),
 
-/***/ "./components/TodoList.js":
-/*!********************************!*\
-  !*** ./components/TodoList.js ***!
-  \********************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/extends */ "./node_modules/@babel/runtime-corejs2/helpers/esm/extends.js");
-/* harmony import */ var _babel_runtime_corejs2_core_js_date_now__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/date/now */ "./node_modules/@babel/runtime-corejs2/core-js/date/now.js");
-/* harmony import */ var _babel_runtime_corejs2_core_js_date_now__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_date_now__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/taggedTemplateLiteral */ "./node_modules/@babel/runtime-corejs2/helpers/esm/taggedTemplateLiteral.js");
-/* harmony import */ var polished__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! polished */ "polished");
-/* harmony import */ var polished__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(polished__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var react_beautiful_dnd__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-beautiful-dnd */ "react-beautiful-dnd");
-/* harmony import */ var react_beautiful_dnd__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react_beautiful_dnd__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! styled-components */ "styled-components");
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var _AddTask__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./AddTask */ "./components/AddTask.js");
-/* harmony import */ var _InfoHeader__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./InfoHeader */ "./components/InfoHeader.js");
-/* harmony import */ var _TodoCard__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./TodoCard */ "./components/TodoCard.js");
-/* harmony import */ var _TodosContext__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./TodosContext */ "./components/TodosContext.js");
-
-
-
-var _jsxFileName = "/Users/j/Desktop/todo-app/components/TodoList.js";
-
-function _templateObject2() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_2__["default"])(["\n  background-color: ", ";\n"]);
-
-  _templateObject2 = function _templateObject2() {
-    return data;
-  };
-
-  return data;
-}
-
-function _templateObject() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_2__["default"])(["\n  .scroll {\n    height: 600px;\n    // background: #000;\n    overflow: scroll;\n  }\n   \nsvg {\n  z-index: 300;\n}\n\n  .info-header {\n    background: ", ";\n    \n    position: sticky;\n    backdrop-filter: blur(4px); \n    /* backdrop-filter: blur(4px) saturate(180%);  */\n    top: 0;\n    z-index: 1000;\n  }\n\n  .list {\n    // margin: 80px;\n    // background: red;\n    margin-top: 20px;\n  }\n  \n  .options:hover .deleteIcon {\n    fill: ", ";;\n    opacity: 1;\n  }\n\n  .options-dropdown {\n    position: relative;\n    /* display: inline-block; */\n    z-index: 200;\n    \n  }\n  .options-content {\n    /* display: none; */\n    right: 10px;\n    top: 20px;\n    position: absolute;\n    background-color: ", ";\n    border-radius: 8px;\n    min-width: 200px;\n    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);\n    display: block;\n    z-index: 1;\n\n    \n\n    .options-content-text {\n      padding: 16px;\n      display: grid;\n      grid-template-columns: 40px 1fr;\n      grid-template-rows: auto;\n      align-items: center;\n    }\n    .options-content-text:hover {\n      background:#00000020;\n      /* color:", ";  */\n      color: ", "; \n      /* background: ", ";  */\n      \n    }\n\n    \n  }\n\n    .draging-over {\n      background-color: ", "; \n    }\n\n    .not-draging-over {\n      background-color: ", "; \n    }\n    \n  }\n  /* .options-dropdown:hover .options-content {\n    display: block;\n  } */\n"]);
-
-  _templateObject = function _templateObject() {
-    return data;
-  };
-
-  return data;
-}
-
-
-
-
-
-
-
-
-
-var Styles = styled_components__WEBPACK_IMPORTED_MODULE_6___default.a.section(_templateObject(), function (_ref) {
-  var theme = _ref.theme;
-  return Object(polished__WEBPACK_IMPORTED_MODULE_3__["rgba"])(theme.colors.bgd, 0.8);
-}, function (_ref2) {
-  var theme = _ref2.theme;
-  return theme.colors.primary;
-}, function (_ref3) {
-  var theme = _ref3.theme;
-  return theme.colors.bgm;
-}, function (_ref4) {
-  var theme = _ref4.theme;
-  return theme.colors.primary;
-}, function (_ref5) {
-  var theme = _ref5.theme;
-  return theme.colors.text;
-}, function (_ref6) {
-  var theme = _ref6.theme;
-  return theme.colors.primary;
-}, function (_ref7) {
-  var theme = _ref7.theme;
-  return theme.colors.bgm;
-}, function (_ref8) {
-  var theme = _ref8.theme;
-  return theme.colors.bgd;
-});
-var CardContainer = styled_components__WEBPACK_IMPORTED_MODULE_6___default.a.div(_templateObject2(), function (props) {
-  return props.isDragging ? function (_ref9) {
-    var theme = _ref9.theme;
-    return Object(polished__WEBPACK_IMPORTED_MODULE_3__["darken"])(0.02, theme.colors.bgd);
-  } : function (_ref10) {
-    var theme = _ref10.theme;
-    return theme.colors.bgd;
-  };
-});
-
-var TodoList = function TodoList(_ref11) {
-  var handleOnDragEnd = _ref11.handleOnDragEnd,
-      handleCheckBox = _ref11.handleCheckBox,
-      addTaskIsShown = _ref11.addTaskIsShown,
-      handleAddTask = _ref11.handleAddTask;
-  // const props = useSpring({
-  //   opacity: 1,
-  //   // transform: ${props => scale(1.3)},
-  //   from: { opacity: 0 },
-  //   config: { duration: 250 }
-  // })
-  var inputRef = Object(react__WEBPACK_IMPORTED_MODULE_4__["useRef"])();
-
-  var _useContext = Object(react__WEBPACK_IMPORTED_MODULE_4__["useContext"])(_TodosContext__WEBPACK_IMPORTED_MODULE_10__["MyTodosContext"]),
-      todos = _useContext.todos,
-      dispatch = _useContext.dispatch;
-
-  var handleSubmit = function handleSubmit(e) {
-    e.preventDefault();
-    var text = inputRef.current.value;
-
-    if (text) {
-      dispatch({
-        type: "ADD",
-        text: text,
-        id: _babel_runtime_corejs2_core_js_date_now__WEBPACK_IMPORTED_MODULE_1___default()(),
-        completed: false
-      });
-    }
-
-    inputRef.current.value = "";
-  };
-
-  return react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(Styles, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 138
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("div", {
-    className: "scroll",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 139
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("div", {
-    className: "info-header",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 140
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_InfoHeader__WEBPACK_IMPORTED_MODULE_8__["default"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 141
-    },
-    __self: this
-  })), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("div", {
-    className: "list",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 144
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(react_beautiful_dnd__WEBPACK_IMPORTED_MODULE_5__["DragDropContext"], {
-    onDragEnd: handleOnDragEnd,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 145
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(react_beautiful_dnd__WEBPACK_IMPORTED_MODULE_5__["Droppable"], {
-    droppableId: "droppable",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 146
-    },
-    __self: this
-  }, function (provided, snapshot) {
-    return react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("div", Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, provided.droppableProps, {
-      ref: provided.innerRef,
-      className: snapshot.isDraggingOver ? "draging-over" : "not-draging-over",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 148
-      },
-      __self: this
-    }), todos.map(function (t, i) {
-      return react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_TodoCard__WEBPACK_IMPORTED_MODULE_9__["default"], Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, t, {
-        handleCheckBox: handleCheckBox // handleDeleteTodo={handleDeleteTodo}
-        ,
-        i: i,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 158
-        },
-        __self: this
-      }));
-    }), provided.placeholder);
-  }))), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_AddTask__WEBPACK_IMPORTED_MODULE_7__["default"], {
-    addTaskIsShown: addTaskIsShown,
-    inputRef: inputRef,
-    handleAddTask: handleAddTask,
-    handleSubmit: handleSubmit,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 172
-    },
-    __self: this
-  })));
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (TodoList);
-
-/***/ }),
-
 /***/ "./components/TodosContext.js":
 /*!************************************!*\
   !*** ./components/TodosContext.js ***!
@@ -1928,7 +1928,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-components */ "styled-components");
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_2__);
 
-var _jsxFileName = "/Users/j/Desktop/todo-app/components/sidebar/AddProjectButton.js";
+var _jsxFileName = "/Users/j/Desktop/pro-todo-app/components/sidebar/AddProjectButton.js";
 
 function _templateObject() {
   var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  .addProject {\n    display: grid;\n    grid-template-columns: auto 1fr;\n    grid-template-rows: 52px;\n\n    margin-left: 50px;\n    // height: 10px;\n\n    color: #eeeeee40;\n    cursor: pointer;\n    /* box-sizing: inside-box; */\n    /* background: red; */\n\n    &:hover {\n      color: #8c4ef8;\n    }\n\n    .addListIcon {\n      display: grid;\n      place-items: center;\n    }\n    .addListText {\n      display: grid;\n      place-items: center start;\n      padding-left: 10px;\n      font-size: 12px;\n      font-weight: bold;\n      margin: 0;\n    }\n  }\n\n  .todoNum {\n    grid-area: 'TodoNum';\n    display: grid;\n    place-items: center;\n    background: #8c4ef8;\n  }\n"]);
@@ -2046,7 +2046,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _ProjectsContext__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./ProjectsContext */ "./components/sidebar/ProjectsContext.js");
 
 
-var _jsxFileName = "/Users/j/Desktop/todo-app/components/sidebar/ProjectList.js";
+var _jsxFileName = "/Users/j/Desktop/pro-todo-app/components/sidebar/ProjectList.js";
 
 function _templateObject() {
   var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_1__["default"])(["\n  .projectListAndForm {\n    overflow-x: scroll;\n\n    height: 250px;\n    // margin-top: -10px;\n\n    .projectList {\n      display: grid;\n      grid-template-columns: auto 1fr 28px;\n      grid-template-rows: auto;\n\n      padding-left: 50px;\n      height: 52px;\n      color: ", ";\n      cursor: pointer;\n\n      &:hover {\n        color: #ff00f5;\n        background: #00000020;\n      }\n      &:hover .projectNum {\n        // background: #8c4ef8;\n        color: #ff00f5;\n      }\n      .projectIcon {\n        display: grid;\n        place-items: center;\n      }\n      .projectText {\n        display: flex;\n        justify-content: space-between;\n        align-items: center;\n\n        padding-left: 10px;\n        font-size: 14px;\n        overflow-x: auto;\n      }\n      .projectNum {\n        display: grid;\n        place-items: center;\n        font-size: 12px;\n        color: #eeeeee33;\n      }\n    }\n  }\n\n  input {\n    box-sizing: border-box;\n\n    width: 100%;\n    border: 0 solid #073175;\n    background: #00000000;\n    color: ", ";\n    // font-size: 16px;\n    outline: none;\n    // margin-bottom: 16px;\n  }\n\n  .projectListForm {\n    display: grid;\n    grid-template-columns: auto 1fr 28px;\n    grid-template-rows: auto;\n\n    padding-left: 50px;\n    height: 52px;\n    margin-top: -10px;\n    color: rgba($text, 0.5);\n    cursor: pointer;\n\n    &:hover {\n      color: #ff00f5;\n      background: #00000020;\n    }\n    &:hover .projectNum {\n      // background: $primary2;\n      color: #ff00f5;\n    }\n    .projectIcon {\n      display: grid;\n      place-items: center;\n    }\n    .projectText {\n      display: flex;\n      justify-content: space-between;\n      align-items: center;\n      color: ", ";\n\n      padding-left: 10px;\n      font-size: 14px;\n      form {\n        input {\n          font-size: 14px;\n          color: #ff00f5;\n        }\n      }\n    }\n    .projectNum {\n      display: grid;\n      place-items: center;\n      font-size: 12px;\n      color: #eeeeee33;\n    }\n  }\n"]);
@@ -2309,10 +2309,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _SidebarTab__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./SidebarTab */ "./components/sidebar/SidebarTab.js");
 /* harmony import */ var _UserInfo__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./UserInfo */ "./components/sidebar/UserInfo.js");
 
-var _jsxFileName = "/Users/j/Desktop/todo-app/components/sidebar/Sidebar.js";
+var _jsxFileName = "/Users/j/Desktop/pro-todo-app/components/sidebar/Sidebar.js";
 
 function _templateObject() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  min-height: 100%;\n  overflow: visible;\n  .sideBar {\n    grid-area: 'sideBar';\n    background: ", ";\n    border-radius: 4px 0 0 4px;\n    display: grid;\n    grid-template-columns: 1fr;\n    grid-template-rows: 160px 1fr 52px;\n    /* resize: horizontal; */\n    overflow: auto;\n    z-index: 2000;\n  }\n  .sidebarMain {\n    /* background: #00f; */\n    overflow: scroll;\n  }\n  .mode {\n    /* background: #000; */\n    z-index: 10;\n    border-top: 1px solid #eeeeee20;\n    display: grid;\n    place-items: center start;\n    padding-left: 52px;\n  }\n  .todoSideBtn {\n    padding: 0 16px 0 36px;\n\n    .sideBtn {\n      height: 52px;\n      border-radius: 8px;\n      padding-left: 16px;\n      display: grid;\n      grid-template-columns: 1fr 28px;\n      grid-template-rows: auto;\n      cursor: pointer;\n      &:hover {\n        background: ", ";\n        color: ", ";\n      }\n      &:hover .todoListNum {\n        // background: $primary2;\n        color: ", ";\n      }\n      .todoSideBtnLabel {\n        display: grid;\n        place-items: center start;\n        color: ", ";\n      }\n      &:hover .todoSideBtnLabel {\n        color: ", ";\n      }\n      .todoSideBtnNum {\n        display: grid;\n        place-items: center;\n        font-size: 12px;\n        color: ", ";\n      }\n    }\n  }\n\n  .sideBarList {\n    margin-top: 20px;\n    display: grid;\n    grid-template-columns: auto;\n    grid-template-rows: auto auto 30px 170px auto;\n    align-content: start;\n    grid-gap: 10px;\n    // height: 100%;\n  }\n\n  .projects {\n    padding-left: 50px;\n    height: 52px;\n    display: grid;\n    place-items: center start;\n  }\n"]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  min-height: 100%;\n  overflow: visible;\n\n  .sideBar {\n    grid-area: 'sideBar';\n    background: ", ";\n    border-radius: 4px 0 0 4px;\n    display: grid;\n    grid-template-columns: 1fr;\n    grid-template-rows: 160px 1fr 52px;\n    /* resize: horizontal; */\n    overflow: auto;\n    z-index: 2000;\n  }\n  .sidebarMain {\n    /* background: #00f; */\n    overflow: scroll;\n  }\n  .mode {\n    /* background: #000; */\n    z-index: 10;\n    border-top: 1px solid #eeeeee20;\n    display: grid;\n    place-items: center start;\n    padding-left: 52px;\n  }\n  .todoSideBtn {\n    padding: 0 16px 0 36px;\n\n    .sideBtn {\n      height: 52px;\n      border-radius: 8px;\n      padding-left: 16px;\n      display: grid;\n      grid-template-columns: 1fr 28px;\n      grid-template-rows: auto;\n      cursor: pointer;\n      &:hover {\n        background: ", ";\n        color: ", ";\n      }\n      &:hover .todoListNum {\n        // background: $primary2;\n        color: ", ";\n      }\n      .todoSideBtnLabel {\n        display: grid;\n        place-items: center start;\n        color: ", ";\n      }\n      &:hover .todoSideBtnLabel {\n        color: ", ";\n      }\n      .todoSideBtnNum {\n        display: grid;\n        place-items: center;\n        font-size: 12px;\n        color: ", ";\n      }\n    }\n  }\n\n  .sideBarList {\n    margin-top: 20px;\n    display: grid;\n    grid-template-columns: auto;\n    grid-template-rows: auto auto 30px 170px auto;\n    align-content: start;\n    grid-gap: 10px;\n    // height: 100%;\n  }\n\n  .projects {\n    padding-left: 50px;\n    height: 52px;\n    display: grid;\n    place-items: center start;\n  }\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -2359,49 +2359,49 @@ var Sidebar = function Sidebar(_ref8) {
   return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Styles, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 95
+      lineNumber: 96
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "sideBar",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 96
+      lineNumber: 97
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_UserInfo__WEBPACK_IMPORTED_MODULE_5__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 97
+      lineNumber: 98
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "sidebarMain",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 99
+      lineNumber: 100
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_SidebarTab__WEBPACK_IMPORTED_MODULE_4__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 100
-    },
-    __self: this
-  }, "Todos"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_SidebarTab__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    __source: {
-      fileName: _jsxFileName,
       lineNumber: 101
     },
     __self: this
-  }, "Calendar"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+  }, "TODOS"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_SidebarTab__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 102
+    },
+    __self: this
+  }, "CALENDAR"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "projects",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 103
+      lineNumber: 104
     },
     __self: this
-  }, " Projects "), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_ProjectList__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  }, " LISTS "), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_ProjectList__WEBPACK_IMPORTED_MODULE_3__["default"], {
     addListIsShown: addListIsShown,
     handleAddListIsShown: handleAddListIsShown // handleAddList={handleAddList}
     // handleDeleteList={handleDeleteList}
@@ -2410,17 +2410,17 @@ var Sidebar = function Sidebar(_ref8) {
     projects: projects,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 105
+      lineNumber: 106
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "mode",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 115
+      lineNumber: 116
     },
     __self: this
-  }, "Zen")));
+  }, "ZEN")));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Sidebar);
@@ -2442,10 +2442,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-components */ "styled-components");
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_2__);
 
-var _jsxFileName = "/Users/j/Desktop/todo-app/components/sidebar/SidebarTab.js";
+var _jsxFileName = "/Users/j/Desktop/pro-todo-app/components/sidebar/SidebarTab.js";
 
 function _templateObject() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  .todoSideBtn {\n    padding: 0 16px 0 36px;\n\n    .sideBtn {\n      height: 52px;\n      border-radius: 8px;\n      padding-left: 16px;\n      display: grid;\n      grid-template-columns: 1fr 28px;\n      grid-template-rows: auto;\n      cursor: pointer;\n      &:hover {\n        background: ", ";\n        color: ", ";\n      }\n      &:hover .todoListNum {\n        // background: $primary2;\n        color: ", ";\n      }\n      .todoSideBtnLabel {\n        display: grid;\n        place-items: center start;\n        color: ", ";\n      }\n      &:hover .todoSideBtnLabel {\n        color: ", ";\n      }\n      .todoSideBtnNum {\n        display: grid;\n        place-items: center;\n        font-size: 12px;\n        color: ", ";\n      }\n    }\n  }\n"]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  .todoSideBtn {\n    padding: 0 16px 0 36px;\n\n    .sideBtn {\n      height: 52px;\n      border-radius: 8px;\n      padding-left: 16px;\n      display: grid;\n      grid-template-columns: 1fr 28px;\n      grid-template-rows: auto;\n      cursor: pointer;\n      &:hover {\n        background: ", ";\n        color: ", ";\n      }\n      &:hover .todoListNum {\n        // background: $primary2;\n        color: ", ";\n      }\n      .todoSideBtnLabel {\n        display: grid;\n        place-items: center start;\n        font-size: ", ";\n        color: ", ";\n      }\n      &:hover .todoSideBtnLabel {\n        color: ", ";\n      }\n      .todoSideBtnNum {\n        display: grid;\n        place-items: center;\n        font-size: 12px;\n        color: ", ";\n      }\n    }\n  }\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -2467,49 +2467,52 @@ var Styles = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.div(_templ
   return theme.colors.text;
 }, function (_ref4) {
   var theme = _ref4.theme;
-  return theme.colors.textLight;
+  return theme.fontSizes[0];
 }, function (_ref5) {
   var theme = _ref5.theme;
-  return theme.colors.text;
+  return theme.colors.textLight;
 }, function (_ref6) {
   var theme = _ref6.theme;
+  return theme.colors.text;
+}, function (_ref7) {
+  var theme = _ref7.theme;
   return theme.colors.textLight;
 });
 
-var SidebarTab = function SidebarTab(_ref7) {
-  var children = _ref7.children;
+var SidebarTab = function SidebarTab(_ref8) {
+  var children = _ref8.children;
   return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Styles, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 43
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-    className: "todoSideBtn",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 44
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-    className: "sideBtn",
+    className: "todoSideBtn",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 45
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-    className: "todoSideBtnLabel",
+    className: "sideBtn",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 46
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "todoSideBtnLabel",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 47
     },
     __self: this
   }, " ", children, " "), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "todoSideBtnNum",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 47
+      lineNumber: 48
     },
     __self: this
   }, "3"))));
@@ -2542,10 +2545,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _ui_DropMenu__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../ui/DropMenu */ "./components/ui/DropMenu.js");
 
 
-var _jsxFileName = "/Users/j/Desktop/todo-app/components/sidebar/UserInfo.js";
+var _jsxFileName = "/Users/j/Desktop/pro-todo-app/components/sidebar/UserInfo.js";
 
 function _templateObject() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_1__["default"])(["\n  .dropMenuPosition {\n    background: #00f;\n    /* width: 100%; */\n    /* right: calc(50% - 100px); */\n    left: 35px;\n    top: 0px;\n    position: relative;\n    z-index: 100000000;\n  }\n  .userCardWrapper {\n    display: grid;\n    /* padding-left: 50px; */\n    place-items: center;\n    height: 100%;\n  }\n  .userCard {\n    display: grid;\n    grid-template-columns: 1fr;\n    grid-template-rows: 1fr;\n    /* padding-left: 50px; */\n    height: 70px;\n\n    .userCardAvatar {\n      margin-bottom: 4px;\n      display: grid;\n      place-items: center;\n    }\n    .userCardName {\n      margin-top: 4px;\n      /* display: flex;\n      justify-content: center;\n      align-items: start; */\n      cursor: pointer;\n\n      /* place-items: start center; */\n\n      /* padding-left: 16px; */\n      /* background: #f00; */\n    }\n\n    .userCardNameBtn {\n      /* background: #000; */\n      padding: 5px 24px;\n      border-radius: 8px;\n      &:hover {\n        background: ", ";\n      }\n    }\n    .userCardNameText {\n      display: inline;\n    }\n\n    .userSettingsMenu {\n      padding-left: 8px;\n      display: inline;\n    }\n  }\n  .options-dropdown {\n    position: relative;\n    /* display: inline-block; */\n    z-index: 200;\n  }\n"]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_1__["default"])(["\n  .dropMenuPosition {\n    /* background: #00f; */\n\n    /* width: 100%; */\n    left: calc(50% - 100px);\n    /* left: 35px; */\n    top: 0px;\n    position: absolute;\n    z-index: 100000000;\n  }\n  .userCardWrapper {\n    display: grid;\n    /* padding-left: 50px; */\n    place-items: center;\n    height: 100%;\n  }\n  .userCard {\n    display: grid;\n    grid-template-columns: 1fr;\n    grid-template-rows: 1fr;\n    /* padding-left: 50px; */\n    height: 70px;\n\n    .userCardAvatar {\n      margin-bottom: 4px;\n      display: grid;\n      place-items: center;\n    }\n    .userCardName {\n      margin-top: 4px;\n      /* display: flex;\n      justify-content: center;\n      align-items: start; */\n      cursor: pointer;\n\n      /* place-items: start center; */\n\n      /* padding-left: 16px; */\n      /* background: #f00; */\n    }\n\n    .userCardNameBtn {\n      /* background: #000; */\n      padding: 5px 24px;\n      border-radius: 8px;\n      &:hover {\n        background: ", ";\n      }\n    }\n    .userCardNameText {\n      display: inline;\n    }\n\n    .userSettingsMenu {\n      padding-left: 8px;\n      display: inline;\n    }\n  }\n  .options-dropdown {\n    /* position: relative; */\n    /* display: inline-block; */\n    /* z-index: 200; */\n  }\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -2595,41 +2598,41 @@ var UserInfo = function UserInfo() {
   return react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(Styles, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 100
+      lineNumber: 101
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
     className: "userCardWrapper",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 101
+      lineNumber: 102
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
     className: "userCard",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 102
+      lineNumber: 103
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
     className: "userCardAvatar",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 103
+      lineNumber: 104
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_svg__WEBPACK_IMPORTED_MODULE_6__["AvatarSvg"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 104
+      lineNumber: 105
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
     className: "userCardName",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 106
+      lineNumber: 107
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
@@ -2639,27 +2642,27 @@ var UserInfo = function UserInfo() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 107
+      lineNumber: 108
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
     className: "userCardNameText ",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 111
+      lineNumber: 112
     },
     __self: this
   }, "Jamal"), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
     className: "userSettingsMenu",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 112
+      lineNumber: 113
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_svg__WEBPACK_IMPORTED_MODULE_6__["UserSettingsMenuSvg"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 113
+      lineNumber: 114
     },
     __self: this
   })))), showMenu && react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(react_spring__WEBPACK_IMPORTED_MODULE_4__["animated"].div, {
@@ -2667,72 +2670,66 @@ var UserInfo = function UserInfo() {
     className: "options-dropdown",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 118
+      lineNumber: 119
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
     className: "dropMenuPosition",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 119
+      lineNumber: 120
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_ui_DropMenu__WEBPACK_IMPORTED_MODULE_7__["default"], {
     showMenu: showMenu,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 120
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
-    className: "options-content-text",
-    __source: {
-      fileName: _jsxFileName,
       lineNumber: 121
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("p", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 122
-    },
-    __self: this
-  }, " || "), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 123
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
     href: "/Login",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 124
+      lineNumber: 122
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("a", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 125
-    },
-    __self: this
-  }, "Logout")))), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
+  }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
     className: "options-content-text",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 130
+      lineNumber: 123
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 131
+      lineNumber: 124
     },
     __self: this
   }, " || "), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 132
+      lineNumber: 125
+    },
+    __self: this
+  }, "Logout"))), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
+    className: "options-content-text",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 129
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 130
+    },
+    __self: this
+  }, " || "), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 131
     },
     __self: this
   }, "Settings"))))))));
@@ -2753,7 +2750,7 @@ var UserInfo = function UserInfo() {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "/Users/j/Desktop/todo-app/components/svg/AddTaskSvg.js";
+var _jsxFileName = "/Users/j/Desktop/pro-todo-app/components/svg/AddTaskSvg.js";
 
 /* harmony default export */ __webpack_exports__["default"] = (function () {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("svg", {
@@ -2818,7 +2815,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-components */ "styled-components");
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_2__);
 
-var _jsxFileName = "/Users/j/Desktop/todo-app/components/svg/AvatarSvg.js";
+var _jsxFileName = "/Users/j/Desktop/pro-todo-app/components/svg/AvatarSvg.js";
 
 function _templateObject() {
   var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    svg {\n      .bgm {\n        fill: ", ";\n      }\n      .primary {\n        fill: ", ";\n      }\n    }\n  "]);
@@ -2934,7 +2931,7 @@ function _templateObject() {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "/Users/j/Desktop/todo-app/components/svg/CancelTaskSvg.js";
+var _jsxFileName = "/Users/j/Desktop/pro-todo-app/components/svg/CancelTaskSvg.js";
 
 /* harmony default export */ __webpack_exports__["default"] = (function () {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("svg", {
@@ -3012,7 +3009,7 @@ var _jsxFileName = "/Users/j/Desktop/todo-app/components/svg/CancelTaskSvg.js";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "/Users/j/Desktop/todo-app/components/svg/CheckBoxSvg.js";
+var _jsxFileName = "/Users/j/Desktop/pro-todo-app/components/svg/CheckBoxSvg.js";
 
 /* harmony default export */ __webpack_exports__["default"] = (function (completed) {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("svg", {
@@ -3062,7 +3059,7 @@ var _jsxFileName = "/Users/j/Desktop/todo-app/components/svg/CheckBoxSvg.js";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "/Users/j/Desktop/todo-app/components/svg/DatePickerSvg.js";
+var _jsxFileName = "/Users/j/Desktop/pro-todo-app/components/svg/DatePickerSvg.js";
 
 /* harmony default export */ __webpack_exports__["default"] = (function () {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("svg", {
@@ -3173,7 +3170,7 @@ var _jsxFileName = "/Users/j/Desktop/todo-app/components/svg/DatePickerSvg.js";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "/Users/j/Desktop/todo-app/components/svg/DeleteTaskSvg.js";
+var _jsxFileName = "/Users/j/Desktop/pro-todo-app/components/svg/DeleteTaskSvg.js";
 
 /* harmony default export */ __webpack_exports__["default"] = (function () {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("svg", {
@@ -3235,7 +3232,7 @@ var _jsxFileName = "/Users/j/Desktop/todo-app/components/svg/DeleteTaskSvg.js";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "/Users/j/Desktop/todo-app/components/svg/GrabSvg.js";
+var _jsxFileName = "/Users/j/Desktop/pro-todo-app/components/svg/GrabSvg.js";
 
 /* harmony default export */ __webpack_exports__["default"] = (function () {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("svg", {
@@ -3344,7 +3341,7 @@ var _jsxFileName = "/Users/j/Desktop/todo-app/components/svg/GrabSvg.js";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "/Users/j/Desktop/todo-app/components/svg/HexBorderSvg.js";
+var _jsxFileName = "/Users/j/Desktop/pro-todo-app/components/svg/HexBorderSvg.js";
 
 /* harmony default export */ __webpack_exports__["default"] = (function (props) {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("svg", {
@@ -3388,7 +3385,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-components */ "styled-components");
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_2__);
 
-var _jsxFileName = "/Users/j/Desktop/todo-app/components/svg/MenuCloseSvg.js";
+var _jsxFileName = "/Users/j/Desktop/pro-todo-app/components/svg/MenuCloseSvg.js";
 
 function _templateObject() {
   var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  .ham {\n    cursor: pointer;\n    -webkit-tap-highlight-color: transparent;\n    transition: transform 400ms;\n    -moz-user-select: none;\n    -webkit-user-select: none;\n    -ms-user-select: none;\n    user-select: none;\n    position: absolute;\n    z-index: 999;\n  }\n  .hamRotate.active {\n    transform: rotate(45deg);\n  }\n  .hamRotate180.active {\n    transform: rotate(180deg);\n  }\n  .line {\n    fill: none;\n    transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;\n    stroke: #000;\n    stroke-width: 5.5;\n    stroke-linecap: round;\n  }\n  .ham1 .top {\n    stroke-dasharray: 40 139;\n  }\n  .ham1 .bottom {\n    stroke-dasharray: 40 180;\n  }\n  .ham1.active .top {\n    stroke-dashoffset: -98px;\n  }\n  .ham1.active .bottom {\n    stroke-dashoffset: -138px;\n  }\n  .anydo {\n    width: 70%;\n    border: 0;\n    margin: 0 auto;\n  }\n  @media screen and (min-width: 1059px) {\n    .nav {\n      margin: -150px;\n    }\n    .anydo {\n      width: 700px;\n    }\n    .header {\n      padding-top: 22em;\n    }\n  }\n  @media screen and (max-width: 1058px) {\n    .nav {\n      margin: -180px;\n    }\n    .anydo {\n      width: 70%;\n    }\n  }\n"]);
@@ -3460,7 +3457,7 @@ var Styles = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.div(_templ
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "/Users/j/Desktop/todo-app/components/svg/PrioritySvg.js";
+var _jsxFileName = "/Users/j/Desktop/pro-todo-app/components/svg/PrioritySvg.js";
 
 /* harmony default export */ __webpack_exports__["default"] = (function () {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("svg", {
@@ -3578,7 +3575,7 @@ var _jsxFileName = "/Users/j/Desktop/todo-app/components/svg/PrioritySvg.js";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "/Users/j/Desktop/todo-app/components/svg/ProjectSvg.js";
+var _jsxFileName = "/Users/j/Desktop/pro-todo-app/components/svg/ProjectSvg.js";
 
 /* harmony default export */ __webpack_exports__["default"] = (function () {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("svg", {
@@ -3646,12 +3643,18 @@ var _jsxFileName = "/Users/j/Desktop/todo-app/components/svg/ProjectSvg.js";
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "/Users/j/Desktop/todo-app/components/svg/SubmitSvg.js";
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/defineProperty */ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 
-/* harmony default export */ __webpack_exports__["default"] = (function () {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("svg", {
+var _jsxFileName = "/Users/j/Desktop/pro-todo-app/components/svg/SubmitSvg.js";
+
+/* harmony default export */ __webpack_exports__["default"] = (function (_ref) {
+  var _React$createElement;
+
+  var next = _ref.next,
+      flat = _ref.flat;
+  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("svg", {
     width: "42",
     height: "42",
     viewBox: "0 0 42 42",
@@ -3662,54 +3665,60 @@ var _jsxFileName = "/Users/j/Desktop/todo-app/components/svg/SubmitSvg.js";
       lineNumber: 6
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
-    d: "M15 3.4641C18.7128 1.32051 23.2872 1.32051 27 3.4641L33.1865 7.0359C36.8993 9.17949 39.1865 13.141 39.1865 17.4282V24.5718C39.1865 28.859 36.8993 32.8205 33.1865 34.9641L27 38.5359C23.2872 40.6795 18.7128 40.6795 15 38.5359L8.81347 34.9641C5.10065 32.8205 2.81347 28.859 2.81347 24.5718V17.4282C2.81347 13.141 5.10065 9.17949 8.81347 7.0359L15 3.4641Z",
-    fill: "#885FFF",
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("path", (_React$createElement = {
+    d: "M15 3.4641C18.7128 1.32051 23.2872 1.32051 27 3.4641L33.1865 7.0359C36.8993 9.17949 39.1865 13.141 39.1865 17.4282V24.5718C39.1865 28.859 36.8993 32.8205 33.1865 34.9641L27 38.5359C23.2872 40.6795 18.7128 40.6795 15 38.5359L8.81347 34.9641C5.10065 32.8205 2.81347 28.859 2.81347 24.5718V17.4282C2.81347 13.141 5.10065 9.17949 8.81347 7.0359L15 3.4641Z" // fill='#885FFF'
+    ,
+    fill: flat && '#073175'
+  }, Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$createElement, "fill", flat ? '#07317500' : '#885FFF'), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$createElement, "__source", {
+    fileName: _jsxFileName,
+    lineNumber: 13
+  }), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$createElement, "__self", this), _React$createElement)), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("g", {
+    transform: next && 'scale(-1)',
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13
+      lineNumber: 19
     },
     __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("rect", {
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("rect", {
     x: "28.9038",
     y: "18.9041",
     width: "4",
     height: "15",
     rx: "2",
     transform: "rotate(90 28.9038 18.9041)",
-    fill: "#073175",
+    fill: flat ? '#073175' : '#073175',
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17
+      lineNumber: 20
     },
     __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("rect", {
+  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("rect", {
     x: "22.9331",
     y: "25.056",
     width: "4.02784",
     height: "9.86072",
     rx: "2",
     transform: "rotate(135 22.9331 25.056)",
-    fill: "#073175",
+    fill: flat ? '#073175' : '#073175',
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 26
+      lineNumber: 29
     },
     __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("rect", {
+  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("rect", {
     x: "20.085",
     y: "13.8872",
     width: "4.01007",
     height: "9.78808",
     rx: "2",
     transform: "rotate(45 20.085 13.8872)",
-    fill: "#073175",
+    fill: flat ? '#073175' : '#073175',
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 35
+      lineNumber: 38
     },
     __self: this
-  })));
+  }))));
 });
 
 /***/ }),
@@ -3725,7 +3734,7 @@ var _jsxFileName = "/Users/j/Desktop/todo-app/components/svg/SubmitSvg.js";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "/Users/j/Desktop/todo-app/components/svg/UserSettingsMenuSvg.js";
+var _jsxFileName = "/Users/j/Desktop/pro-todo-app/components/svg/UserSettingsMenuSvg.js";
 
 /* harmony default export */ __webpack_exports__["default"] = (function () {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("svg", {
@@ -3846,10 +3855,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-components */ "styled-components");
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_2__);
 
-var _jsxFileName = "/Users/j/Desktop/todo-app/components/ui/DropMenu.js";
+var _jsxFileName = "/Users/j/Desktop/pro-todo-app/components/ui/DropMenu.js";
 
 function _templateObject() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  \n  \n\n  .options-content {\n    /* display: none; */\n   \n    position: absolute;\n    background-color: ", ";\n    border-radius: 8px;\n    min-width: 200px;\n    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);\n    display: block;\n    z-index: 1;\n\n    .options-content-text {\n      padding: 16px;\n      display: grid;\n      grid-template-columns: 40px 1fr;\n      grid-template-rows: auto;\n      align-items: center;\n    }\n    \n    .options-content-text:hover {\n      background:#00000020;\n      /* color:", ";  */\n      color: ", "; \n      /* background: ", ";  */\n      \n    }\n  }\n"]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  \n \n  /* position: absolute; */\n\n  .options-content {\n    /* display: none; */\n   \n    background-color: ", ";\n    border-radius: 8px;\n    min-width: 200px;\n    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);\n    display: block;\n    z-index: 1;\n\n    .options-content-text {\n      padding: 16px;\n      display: grid;\n      grid-template-columns: 40px 1fr;\n      grid-template-rows: auto;\n      align-items: center;\n      cursor: pointer;\n    }\n    \n    .options-content-text:hover {\n      background:#00000020;\n      /* color:", ";  */\n      color: ", "; \n      /* background: ", ";  */\n      \n    }\n  }\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -3880,20 +3889,20 @@ var DropMenu = function DropMenu(_ref5) {
   return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Styles, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 38
+      lineNumber: 39
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "options-content",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 39
+      lineNumber: 40
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 40
+      lineNumber: 41
     },
     __self: this
   }, " ", children, " ")));
@@ -4915,15 +4924,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/objectSpread */ "./node_modules/@babel/runtime-corejs2/helpers/esm/objectSpread.js");
 /* harmony import */ var _babel_runtime_corejs2_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/toConsumableArray */ "./node_modules/@babel/runtime-corejs2/helpers/esm/toConsumableArray.js");
 /* harmony import */ var _babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/taggedTemplateLiteral */ "./node_modules/@babel/runtime-corejs2/helpers/esm/taggedTemplateLiteral.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! styled-components */ "styled-components");
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_8__);
-/* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../components/Layout */ "./components/Layout.js");
-/* harmony import */ var _components_sidebar_ProjectsContext__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../components/sidebar/ProjectsContext */ "./components/sidebar/ProjectsContext.js");
-/* harmony import */ var _components_sidebar_Sidebar__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../components/sidebar/Sidebar */ "./components/sidebar/Sidebar.js");
-/* harmony import */ var _components_TodoList__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../components/TodoList */ "./components/TodoList.js");
-/* harmony import */ var _components_TodosContext__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../components/TodosContext */ "./components/TodosContext.js");
+/* harmony import */ var polished__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! polished */ "polished");
+/* harmony import */ var polished__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(polished__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! styled-components */ "styled-components");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../components/Layout */ "./components/Layout.js");
+/* harmony import */ var _components_sidebar_ProjectsContext__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../components/sidebar/ProjectsContext */ "./components/sidebar/ProjectsContext.js");
+/* harmony import */ var _components_sidebar_Sidebar__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../components/sidebar/Sidebar */ "./components/sidebar/Sidebar.js");
+/* harmony import */ var _components_TodoList__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../components/TodoList */ "./components/TodoList.js");
+/* harmony import */ var _components_TodosContext__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../components/TodosContext */ "./components/TodosContext.js");
 
 
 
@@ -4931,10 +4942,10 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "/Users/j/Desktop/todo-app/pages/Signedin.js";
+var _jsxFileName = "/Users/j/Desktop/pro-todo-app/pages/Signedin.js";
 
 function _templateObject() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_6__["default"])(["\n  /* height: 100%; */\n  .wrapper {\n    width: 100%;\n    height: 100%;\n\n    border-radius: 4px;\n    // background-color: $bgm;\n    // border: 1px solid $bgl;\n    // box-shadow: 0 90px 100px -50px rgba(black, 0.4),\n    //   0 50px 70px 10px rgba(black, 0.1);\n    display: grid;\n    grid-template-columns: 250px 1fr;\n    grid-template-rows: 1fr;\n    grid-template-areas: ' sideBar  content ';\n  }\n\n  // * /////////////////////////////////////////////SIDE-BAR/////////////////////////////////////////////// * //\n\n  /* .userCard {\n    display: grid;\n    grid-template-columns: 50px 1fr;\n    padding-left: 50px;\n    .userCardAvatar {\n      display: grid;\n      place-items: center;\n    }\n    .userCardName {\n      display: grid;\n      place-items: center start;\n      padding-left: 16px;\n    }\n  } */\n\n  // * ///////////////////////////////////////CONTENT///////////////////////////////////// * //\n\n  .content {\n    grid-area: 'content';\n    background: ", ";\n\n    overflow-anchor: none;\n    border-radius: 0 4px 4px 0;\n    z-index: 1;\n  }\n\n  .anchor {\n    overflow-anchor: auto;\n    height: 1px;\n  }\n"]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_6__["default"])(["\n  .info-header {\n    background: ", ";\n    /* background: black; */\n    /* opacity: 0.3; */\n\n    position: sticky;\n    backdrop-filter: blur(4px);\n    /* backdrop-filter: blur(4px) saturate(180%);  */\n    top: 0;\n    z-index: 1000;\n  }\n  /* height: 100%; */\n  .wrapper {\n    width: 100%;\n    height: 100%;\n\n    border-radius: 4px;\n    // background-color: $bgm;\n    // border: 1px solid $bgl;\n    // box-shadow: 0 90px 100px -50px rgba(black, 0.4),\n    //   0 50px 70px 10px rgba(black, 0.1);\n    display: grid;\n    grid-template-columns: 250px 1fr;\n    grid-template-rows: 1fr;\n    grid-template-areas: ' sideBar  content ';\n\n    position: relative;\n  }\n\n  // * /////////////////////////////////////////////SIDE-BAR/////////////////////////////////////////////// * //\n\n  /* .userCard {\n    display: grid;\n    grid-template-columns: 50px 1fr;\n    padding-left: 50px;\n    .userCardAvatar {\n      display: grid;\n      place-items: center;\n    }\n    .userCardName {\n      display: grid;\n      place-items: center start;\n      padding-left: 16px;\n    }\n  } */\n\n  // * ///////////////////////////////////////CONTENT///////////////////////////////////// * //\n\n  .content {\n    grid-area: 'content';\n    background: ", ";\n\n    overflow-anchor: none;\n    border-radius: 0 4px 4px 0;\n    z-index: 1;\n  }\n\n  .anchor {\n    overflow-anchor: auto;\n    height: 1px;\n  }\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -4950,8 +4961,12 @@ function _templateObject() {
 
 
 
-var Styles = styled_components__WEBPACK_IMPORTED_MODULE_8___default.a.div(_templateObject(), function (_ref) {
+
+var Styles = styled_components__WEBPACK_IMPORTED_MODULE_9___default.a.div(_templateObject(), function (_ref) {
   var theme = _ref.theme;
+  return Object(polished__WEBPACK_IMPORTED_MODULE_7__["rgba"])(theme.colors.bgd, 0.4);
+}, function (_ref2) {
+  var theme = _ref2.theme;
   return theme.colors.bgd;
 });
 
@@ -5015,20 +5030,20 @@ var projectsReducer = function projectsReducer(state, action) {
 };
 
 var Index = function Index() {
-  var addListRef = Object(react__WEBPACK_IMPORTED_MODULE_7__["useRef"])();
-  var didRun = Object(react__WEBPACK_IMPORTED_MODULE_7__["useRef"])(false);
+  var addListRef = Object(react__WEBPACK_IMPORTED_MODULE_8__["useRef"])();
+  var didRun = Object(react__WEBPACK_IMPORTED_MODULE_8__["useRef"])(false);
 
-  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_7__["useState"])(false),
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_8__["useState"])(false),
       _useState2 = Object(_babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_3__["default"])(_useState, 2),
       addTaskIsShown = _useState2[0],
       setAddTaskIsShown = _useState2[1];
 
-  var _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_7__["useState"])(false),
+  var _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_8__["useState"])(false),
       _useState4 = Object(_babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_3__["default"])(_useState3, 2),
       addListIsShown = _useState4[0],
       setAddListIsShown = _useState4[1];
 
-  var _useReducer = Object(react__WEBPACK_IMPORTED_MODULE_7__["useReducer"])(reducer, [{
+  var _useReducer = Object(react__WEBPACK_IMPORTED_MODULE_8__["useReducer"])(reducer, [{
     id: _babel_runtime_corejs2_core_js_date_now__WEBPACK_IMPORTED_MODULE_2___default()(),
     text: 'Read',
     // completed: true,
@@ -5048,7 +5063,7 @@ var Index = function Index() {
       todos = _useReducer2[0],
       dispatch = _useReducer2[1];
 
-  var _useReducer3 = Object(react__WEBPACK_IMPORTED_MODULE_7__["useReducer"])(projectsReducer, [{
+  var _useReducer3 = Object(react__WEBPACK_IMPORTED_MODULE_8__["useReducer"])(projectsReducer, [{
     id: _babel_runtime_corejs2_core_js_date_now__WEBPACK_IMPORTED_MODULE_2___default()(),
     projectName: 'Design',
     totalTodos: 0,
@@ -5058,7 +5073,7 @@ var Index = function Index() {
       projects = _useReducer4[0],
       projectDispatch = _useReducer4[1];
 
-  Object(react__WEBPACK_IMPORTED_MODULE_7__["useEffect"])(function () {
+  Object(react__WEBPACK_IMPORTED_MODULE_8__["useEffect"])(function () {
     if (!didRun.current) {
       var raw = localStorage.getItem('data');
       dispatch({
@@ -5068,7 +5083,7 @@ var Index = function Index() {
       didRun.current = true;
     }
   });
-  Object(react__WEBPACK_IMPORTED_MODULE_7__["useEffect"])(function () {
+  Object(react__WEBPACK_IMPORTED_MODULE_8__["useEffect"])(function () {
     localStorage.setItem('data', _babel_runtime_corejs2_core_js_json_stringify__WEBPACK_IMPORTED_MODULE_1___default()(todos));
   }, [todos]);
 
@@ -5125,46 +5140,46 @@ var Index = function Index() {
     });
   };
 
-  return react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_components_Layout__WEBPACK_IMPORTED_MODULE_9__["default"], {
+  return react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_components_Layout__WEBPACK_IMPORTED_MODULE_10__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 221
+      lineNumber: 235
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(Styles, {
+  }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(Styles, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 222
+      lineNumber: 236
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_components_sidebar_ProjectsContext__WEBPACK_IMPORTED_MODULE_10__["MyProjectsProvider"], {
+  }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_components_sidebar_ProjectsContext__WEBPACK_IMPORTED_MODULE_11__["MyProjectsProvider"], {
     value: {
       projects: projects,
       projectDispatch: projectDispatch
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 223
+      lineNumber: 237
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_components_TodosContext__WEBPACK_IMPORTED_MODULE_13__["MyTodosProvider"], {
+  }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_components_TodosContext__WEBPACK_IMPORTED_MODULE_14__["MyTodosProvider"], {
     value: {
       todos: todos,
       dispatch: dispatch
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 224
+      lineNumber: 238
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+  }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
     className: "wrapper",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 225
+      lineNumber: 239
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_components_sidebar_Sidebar__WEBPACK_IMPORTED_MODULE_11__["default"], {
+  }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_components_sidebar_Sidebar__WEBPACK_IMPORTED_MODULE_12__["default"], {
     addListIsShown: addListIsShown,
     handleAddListIsShown: handleAddListIsShown // handleAddList={handleAddList}
     // handleDeleteList={handleDeleteList}
@@ -5174,17 +5189,17 @@ var Index = function Index() {
     ,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 226
+      lineNumber: 240
     },
     __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+  }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
     className: "content",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 236
+      lineNumber: 250
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_components_TodoList__WEBPACK_IMPORTED_MODULE_12__["default"] // todos={todos}
+  }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_components_TodoList__WEBPACK_IMPORTED_MODULE_13__["default"] // todos={todos}
   , {
     handleOnDragEnd: handleOnDragEnd,
     handleCheckBox: handleCheckBox // handleDeleteTodo={handleDeleteTodo}
@@ -5195,7 +5210,7 @@ var Index = function Index() {
     ,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 237
+      lineNumber: 251
     },
     __self: this
   })))))));
@@ -5205,14 +5220,14 @@ var Index = function Index() {
 
 /***/ }),
 
-/***/ 5:
+/***/ 3:
 /*!*********************************!*\
   !*** multi ./pages/Signedin.js ***!
   \*********************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/j/Desktop/todo-app/pages/Signedin.js */"./pages/Signedin.js");
+module.exports = __webpack_require__(/*! /Users/j/Desktop/pro-todo-app/pages/Signedin.js */"./pages/Signedin.js");
 
 
 /***/ }),

@@ -12113,39 +12113,59 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "/Users/j/Desktop/todo-app/pages/_app.js";
+var _jsxFileName = "/Users/j/Desktop/pro-todo-app/pages/_app.js";
 
 
 
 var theme = {
   colors: {
-    primary: "#8c4ef8",
-    text: "#eee",
-    textLight: "#eeeeee88",
-    bleuish: "#0070f3",
-    bg: "#1d1c23",
-    bgl: "#073175",
-    bgm: "#062659",
-    bgd: "#041a3e",
-    bgdl: "#4c5f7e",
-    sidePanel: "#07317544",
-    sideBar: "#052456",
-    radius: "8px"
+    primary: '#8c4ef8',
+    text: '#eee',
+    textLight: '#eeeeee88',
+    textLightBlue: '#536A91',
+    bleuish: '#0070f3',
+    bg: '#1d1c23',
+    bgl: '#073175',
+    bgm: '#062659',
+    bgd: '#041a3e',
+    bgdl: '#4c5f7e',
+    sidePanel: '#07317544',
+    sideBar: '#052456',
+    radius: '8px'
+  },
+  size: {
+    s: '14px',
+    radius: '8px'
+  },
+  fonts: {
+    body: 'system-ui, sans-serif',
+    heading: 'Georgia, serif',
+    monospace: 'Menlo, monospace'
+  },
+  fontSizes: [12, 14, 16, 20, 24, 32, 48, 64],
+  fontWeights: {
+    body: 400,
+    heading: 700,
+    bold: 500
+  },
+  lineHeights: {
+    body: 1.5,
+    heading: 1.125
   }
 };
 var theme0 = {
   colors: {
-    primary: "#8c4ef8",
-    text: "#333",
-    textLight: "#33333388",
-    bleuish: "#0070f3",
-    bg: "#1d1c23",
-    bgl: "#eee",
-    bgm: "#ddd",
-    bgd: "#ccc",
-    bgdl: "#c0c0c044",
-    sidePanel: "#07317544",
-    sideBar: "#ffffff88"
+    primary: '#8c4ef8',
+    text: '#333',
+    textLight: '#33333388',
+    bleuish: '#0070f3',
+    bg: '#1d1c23',
+    bgl: '#eee',
+    bgm: '#ddd',
+    bgd: '#ccc',
+    bgdl: '#c0c0c044',
+    sidePanel: '#07317544',
+    sideBar: '#ffffff88'
   }
 };
 
@@ -12169,20 +12189,20 @@ function (_App) {
       return react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(next_app__WEBPACK_IMPORTED_MODULE_8__["Container"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 51
+          lineNumber: 71
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(styled_components__WEBPACK_IMPORTED_MODULE_10__["ThemeProvider"], {
         theme: theme,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 52
+          lineNumber: 72
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(Component, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_2__["default"])({}, pageProps, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 53
+          lineNumber: 73
         },
         __self: this
       }))));

@@ -2295,7 +2295,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "/Users/j/Desktop/todo-app/pages/_document.js";
+var _jsxFileName = "/Users/j/Desktop/pro-todo-app/pages/_document.js";
 
 
 

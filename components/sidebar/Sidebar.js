@@ -7,6 +7,7 @@ import UserInfo from './UserInfo'
 const Styles = styled.div`
   min-height: 100%;
   overflow: visible;
+
   .sideBar {
     grid-area: 'sideBar';
     background: ${({ theme }) => theme.colors.sideBar};
@@ -97,10 +98,10 @@ const Sidebar = ({
       <UserInfo />
 
       <div className='sidebarMain'>
-        <SidebarTab>Todos</SidebarTab>
-        <SidebarTab>Calendar</SidebarTab>
+        <SidebarTab>TODOS</SidebarTab>
+        <SidebarTab>CALENDAR</SidebarTab>
 
-        <div className='projects'> Projects </div>
+        <div className='projects'> LISTS </div>
 
         <ProjectList
           addListIsShown={addListIsShown}
@@ -112,7 +113,7 @@ const Sidebar = ({
         />
       </div>
 
-      <div className='mode'>Zen</div>
+      <div className='mode'>ZEN</div>
     </div>
   </Styles>
 )

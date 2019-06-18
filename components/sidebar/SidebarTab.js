@@ -24,6 +24,7 @@ const Styles = styled.div`
       .todoSideBtnLabel {
         display: grid;
         place-items: center start;
+        font-size: ${({ theme }) => theme.fontSizes[0]};
         color: ${({ theme }) => theme.colors.textLight};
       }
       &:hover .todoSideBtnLabel {

@@ -7,12 +7,13 @@ import DropMenu from '../ui/DropMenu'
 
 const Styles = styled.div`
   .dropMenuPosition {
-    background: #00f;
+    /* background: #00f; */
+
     /* width: 100%; */
-    /* right: calc(50% - 100px); */
-    left: 35px;
+    left: calc(50% - 100px);
+    /* left: 35px; */
     top: 0px;
-    position: relative;
+    position: absolute;
     z-index: 100000000;
   }
   .userCardWrapper {
@@ -64,9 +65,9 @@ const Styles = styled.div`
     }
   }
   .options-dropdown {
-    position: relative;
+    /* position: relative; */
     /* display: inline-block; */
-    z-index: 200;
+    /* z-index: 200; */
   }
 `
 
@@ -118,14 +119,12 @@ const UserInfo = () => {
             <animated.div style={sp} className='options-dropdown'>
               <div className='dropMenuPosition'>
                 <DropMenu showMenu={showMenu}>
-                  <div className='options-content-text'>
-                    <p> || </p>
-                    <div>
-                      <Link href='/Login'>
-                        <a>Logout</a>
-                      </Link>
+                  <Link href='/Login'>
+                    <div className='options-content-text'>
+                      <p> || </p>
+                      <p>Logout</p>
                     </div>
-                  </div>
+                  </Link>
 
                   <div className='options-content-text'>
                     <p> || </p>

@@ -1,8 +1,21 @@
 import Link from 'next/link'
 import React, { useRef, useState } from 'react'
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 import Layout from '../components/Layout'
 import { SidebarTab, UserInfo } from '../components/sidebar'
+import { SubmitSvg } from '../components/svg'
+import Align from '../components/ui/Align'
+import Button from '../components/ui/Button'
+import Divider from '../components/ui/Divider'
+import TextField from '../components/ui/TextField'
+
+const ShowHide = styled.div`
+  ${props =>
+    props.hide &&
+    css`
+      display: none;
+    `}
+`
 
 const Styles = styled.div`
   height: 100%;
@@ -11,13 +24,8 @@ const Styles = styled.div`
     width: 100%;
     height: 100%;
 
-    // padding: 20px;
-    // border: 1px solid rgba(#fff, 0.08);
     border-radius: 4px;
-    // background-color: $bgm;
-    // border: 1px solid $bgl;
-    // box-shadow: 0 90px 100px -50px rgba(black, 0.4),
-    //   0 50px 70px 10px rgba(black, 0.1);
+
     display: grid;
     grid-template-columns: 250px 1fr;
     grid-template-rows: 1fr;
@@ -107,9 +115,44 @@ const Login = ({ userSignedin, setUserSignedin }) => {
           </div>
 
           <div className='content'>
-            <Link href='/Signedin'>
-              <a>Signin</a>
-            </Link>
+            <Align ha='center' va='center'>
+              <div style={{ width: '500px' }}>
+                <ShowHide>
+                  <TextField
+                    autoFocus
+                    label='Email'
+                    placeholder='enter your email here'
+                  />
+                  <Divider transparent height='16px' />
+                  <Align ha='center' va='center'>
+                    <SubmitSvg next />
+                    <Link href='/Signedin'>
+                      <a>
+                        {/*<Button>BACK</Button>
+                        <Button primary>NEXT</Button>*/}
+                        <SubmitSvg flat />
+                      </a>
+                    </Link>
+                  </Align>
+                </ShowHide>
+                <Divider transparent />
+                <ShowHide hide>
+                  <TextField
+                    autoFocus
+                    label='Password'
+                    placeholder='enter your Password here'
+                  />
+                  <Divider />
+
+                  <Link href='/Signedin'>
+                    <a>
+                      <Button primary>LOGIN</Button>
+                      <Button>CANCEL</Button>
+                    </a>
+                  </Link>
+                </ShowHide>
+              </div>
+            </Align>
           </div>
         </div>
       </Styles>
