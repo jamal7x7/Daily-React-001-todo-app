@@ -1,10 +1,18 @@
-import { lighten, rgba } from 'polished';
-import React, { useContext, useState } from 'react';
-import { animated, useSpring } from 'react-spring';
-import styled from 'styled-components';
-import FormTabContent from '../components/FormTabContent';
-import { AddTaskSvg, DatePickerSvg, DeleteTaskSvg, HexBorderSvg, PrioritySvg, ProjectSvg, SubmitSvg } from './svg';
-import { MyTodosContext } from './TodosContext';
+import { lighten, rgba } from 'polished'
+import React, { useContext, useState } from 'react'
+import { animated, useSpring } from 'react-spring'
+import styled from 'styled-components'
+import FormTabContent from '../components/FormTabContent'
+import {
+  AddTaskSvg,
+  DatePickerSvg,
+  DeleteTaskSvg,
+  HexBorderSvg,
+  PrioritySvg,
+  ProjectSvg,
+  SubmitSvg
+} from './svg'
+import { MyTodosContext } from './TodosContext'
 
 const Button = styled.button`
   border: none;
@@ -180,6 +188,7 @@ const AddTask = ({ addTaskIsShown, handleSubmit, handleAddTask, inputRef }) => {
 
   const [state, toggle] = useState(false)
   const [tab, setTab] = useState('projectTab')
+  console.log(tab)
 
   const p = useSpring({
     // opacity: state ? 1 : 0,

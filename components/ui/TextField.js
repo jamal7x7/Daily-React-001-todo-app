@@ -1,3 +1,4 @@
+import { animated, useSpring } from 'react-spring'
 import styled from 'styled-components'
 
 const Label = styled.p`
@@ -35,13 +36,40 @@ const Input = styled.input`
   }
 `
 
-const TextField = ({ label, placeholder, autoFocus, hide }) => {
+const TextField = ({ label, placeholder, autoFocus, hide, show, type }) => {
+  const flabel = useSpring({
+    opacity: !show ? 1 : 1,
+
+    // transformOrigin: 'top',
+    // transform: show
+    //   ? 'scaleY(1) translateX(0px) translateY(0px) '
+    //   : 'scaleY(1) translateX(0px) translateY(4px) ',
+    //background: show ? '#00000000' : `#073175`,
+
+    config: { mass: 1, tension: 500, friction: 30 }
+  })
+  const finput = useSpring({
+    opacity: !show ? 1 : 1,
+
+    // transformOrigin: 'top',
+    // transform: show
+    //   ? 'scaleY(1) translateX(0px) translateY(0px) '
+    //   : 'scaleY(1) translateX(0px) translateY(4px) ',
+    // background: show ? '#00000000' : `#073175`,
+
+    config: { mass: 1, tension: 500, friction: 30 }
+  })
+
   return (
     <>
-      <Label> {label} </Label>
-      <InputWrapper>
-        <Input autoFocus={autoFocus} placeholder={placeholder} />
-      </InputWrapper>
+      <animated.div style={flabel}>
+        <Label> {label} </Label>
+      </animated.div>
+      <animated.div style={finput}>
+        <InputWrapper>
+          <Input autoFocus={autoFocus} placeholder={placeholder} />
+        </InputWrapper>
+      </animated.div>
     </>
   )
 }

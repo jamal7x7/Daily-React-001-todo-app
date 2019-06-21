@@ -1,6 +1,6 @@
-import React, { useContext } from "react"
-import styled from "styled-components"
-import { MyProjectsContext } from "./sidebar/ProjectsContext"
+import React, { useContext } from 'react'
+import styled from 'styled-components'
+import { MyProjectsContext } from './sidebar/ProjectsContext'
 
 const Styles = styled.section`
   .projectListAndForm {
@@ -122,34 +122,34 @@ const Styles = styled.section`
 const FormTabContent = ({ tab }) => {
   const { projects, projectDispatch } = useContext(MyProjectsContext)
 
-  console.log("========================>", tab.name)
+  console.log('========================>', tab.name)
   return (
     <Styles>
-      <div className="projectListAndForm">
-        {tab.name === "projectTab" &&
-          projects.map(p => (
-            <div className="projectList">
-              <div className="chooseProject">
-                <div className="projectIcon">
-                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+      <div className='projectListAndForm'>
+        {tab.name === 'projectTab' &&
+          projects.map((p, i) => (
+            <div key={i} className='projectList'>
+              <div className='chooseProject'>
+                <div className='projectIcon'>
+                  <svg width='14' height='14' viewBox='0 0 14 14' fill='none'>
                     <path
-                      d="M6 0.57735C6.6188 0.220085 7.3812 0.220085 8 0.57735L12.0622 2.92265C12.681 3.27992 13.0622 3.94017 13.0622 4.6547V9.3453C13.0622 10.0598 12.681 10.7201 12.0622 11.0774L8 13.4227C7.3812 13.7799 6.6188 13.7799 6 13.4226L1.93782 11.0773C1.31902 10.7201 0.937822 10.0598 0.937822 9.3453V4.6547C0.937822 3.94017 1.31902 3.27992 1.93782 2.92265L6 0.57735Z"
-                      fill="#FF00F5"
+                      d='M6 0.57735C6.6188 0.220085 7.3812 0.220085 8 0.57735L12.0622 2.92265C12.681 3.27992 13.0622 3.94017 13.0622 4.6547V9.3453C13.0622 10.0598 12.681 10.7201 12.0622 11.0774L8 13.4227C7.3812 13.7799 6.6188 13.7799 6 13.4226L1.93782 11.0773C1.31902 10.7201 0.937822 10.0598 0.937822 9.3453V4.6547C0.937822 3.94017 1.31902 3.27992 1.93782 2.92265L6 0.57735Z'
+                      fill='#FF00F5'
                     />
                   </svg>
                 </div>
-                <div className="projectText">
-                  {" "}
+                <div className='projectText'>
+                  {' '}
                   <p> {p.projectName} </p>
                 </div>
               </div>
             </div>
           ))}
-        {tab.name === "priorityTab" && (
-          <div className="projectList">Priority</div>
+        {tab.name === 'priorityTab' && (
+          <div className='projectList'>Priority</div>
         )}
-        {tab.name === "datePickerTab" && (
-          <div className="projectList">Date Picker</div>
+        {tab.name === 'datePickerTab' && (
+          <div className='projectList'>Date Picker</div>
         )}
       </div>
     </Styles>

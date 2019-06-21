@@ -18,14 +18,27 @@ const Inner = styled.div`
 
   /* height: 100px; */
   width: 100%;
+
   /* cursor: pointer; */
 `
+const XInner = styled.div`
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: ${props => (props.stack ? 'column' : 'row')};
 
-const Center = ({ children, va, ha, stack }) => (
+  justify-content: ${props => (props.placing ? 'space-between' : 'center')};
+
+  /* width: 100%; */
+  width: ${props => (props.width ? props.width : '100%')};
+`
+
+const Center = ({ children, va, ha, width, stack, placing }) => (
   <Outer>
-    <Inner va={va} ha={ha} stack={stack}>
-      {' '}
-      {children}{' '}
+    <Inner va={va} ha={ha}>
+      <XInner stack={stack} placing={placing} width={width}>
+        {' '}
+        {children}{' '}
+      </XInner>
     </Inner>
   </Outer>
 )
