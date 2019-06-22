@@ -2317,8 +2317,18 @@ __webpack_require__.r(__webpack_exports__);
 
 var _jsxFileName = "/Users/j/Desktop/pro-todo-app/components/sidebar/SidebarTab.js";
 
+function _templateObject2() {
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  display: grid;\n  place-items: center;\n  font-size: 12px;\n  color: ", ";\n"]);
+
+  _templateObject2 = function _templateObject2() {
+    return data;
+  };
+
+  return data;
+}
+
 function _templateObject() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  .todoSideBtn {\n    padding: 0 16px 0 36px;\n\n    .sideBtn {\n      height: 52px;\n      border-radius: 8px;\n      padding-left: 16px;\n      display: grid;\n      grid-template-columns: 1fr 28px;\n      grid-template-rows: auto;\n      cursor: pointer;\n      &:hover {\n        background: ", ";\n        color: ", ";\n      }\n      &:hover .todoListNum {\n        // background: $primary2;\n        color: ", ";\n      }\n      .todoSideBtnLabel {\n        display: grid;\n        place-items: center start;\n        font-size: ", ";\n        color: ", ";\n      }\n      &:hover .todoSideBtnLabel {\n        color: ", ";\n      }\n      .todoSideBtnNum {\n        display: grid;\n        place-items: center;\n        font-size: 12px;\n        color: ", ";\n      }\n    }\n  }\n"]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  .todoSideBtn {\n    padding: 0 16px 0 36px;\n\n    .sideBtn {\n      height: 52px;\n      border-radius: 8px;\n      padding-left: 16px;\n      display: grid;\n      grid-template-columns: 1fr 28px;\n      grid-template-rows: auto;\n        background: ", ";\n      cursor: pointer;\n      &:hover {\n        background: ", " ;\n        color: ", ";\n      }\n      &:hover .todoListNum {\n        // background: $primary2;\n        color: ", ";\n      }\n      .todoSideBtnLabel {\n        display: grid;\n        place-items: center start;\n        /* font-size: ", "; */\n        font-size: 14px;\n        color: ", ";\n      }\n      &:hover .todoSideBtnLabel {\n        color: ", ";\n      }\n     \n    }\n  }\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -2329,63 +2339,69 @@ function _templateObject() {
 
 
 
-var Styles = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject(), function (_ref) {
-  var theme = _ref.theme;
-  return theme.colors.bgl;
+var Styles = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject(), function (props) {
+  return props.active ? function (_ref) {
+    var theme = _ref.theme;
+    return theme.colors.bgl;
+  } : '00000000';
 }, function (_ref2) {
   var theme = _ref2.theme;
-  return theme.colors.text;
+  return theme.colors.bgl;
 }, function (_ref3) {
   var theme = _ref3.theme;
   return theme.colors.text;
 }, function (_ref4) {
   var theme = _ref4.theme;
-  return theme.fontSizes[0];
+  return theme.colors.text;
 }, function (_ref5) {
   var theme = _ref5.theme;
-  return theme.colors.textLight;
+  return theme.fontSizes[0];
 }, function (_ref6) {
   var theme = _ref6.theme;
-  return theme.colors.text;
+  return theme.colors.textLight;
 }, function (_ref7) {
   var theme = _ref7.theme;
+  return theme.colors.text;
+});
+var TodoSideBtnNum = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject2(), function (_ref8) {
+  var theme = _ref8.theme;
   return theme.colors.textLight;
 });
 
-var SidebarTab = function SidebarTab(_ref8) {
-  var children = _ref8.children;
+var SidebarTab = function SidebarTab(_ref9) {
+  var children = _ref9.children,
+      num = _ref9.num;
   return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Styles, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 44
+      lineNumber: 48
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "todoSideBtn",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 45
+      lineNumber: 49
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "sideBtn",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 46
+      lineNumber: 50
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "todoSideBtnLabel",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 47
+      lineNumber: 51
     },
     __self: this
-  }, " ", children, " "), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-    className: "todoSideBtnNum",
+  }, " ", children, " "), num && react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(TodoSideBtnNum, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 48
+      lineNumber: 52
     },
     __self: this
   }, "3"))));
@@ -4101,6 +4117,159 @@ var DropMenu = function DropMenu(_ref5) {
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (DropMenu);
+
+/***/ }),
+
+/***/ "./components/ui/Tab.js":
+/*!******************************!*\
+  !*** ./components/ui/Tab.js ***!
+  \******************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/taggedTemplateLiteral */ "./node_modules/@babel/runtime-corejs2/helpers/esm/taggedTemplateLiteral.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+
+var _jsxFileName = "/Users/j/Desktop/pro-todo-app/components/ui/Tab.js";
+
+function _templateObject2() {
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  display: grid;\n  place-items: center;\n  font-size: 12px;\n  color: ", ";\n"]);
+
+  _templateObject2 = function _templateObject2() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject() {
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  .todoSideBtn {\n    padding: 0 16px 0 36px;\n\n    .sideBtn {\n      height: 52px;\n      border-radius: 8px;\n      padding-left: 16px;\n      display: grid;\n      grid-template-columns: 1fr 28px;\n      grid-template-rows: auto;\n        background: ", ";\n      cursor: pointer;\n      &:hover {\n        background: ", " ;\n        color: ", ";\n      }\n      &:hover .todoListNum {\n        // background: $primary2;\n        color: ", ";\n      }\n      .todoSideBtnLabel {\n        display: grid;\n        place-items: center start;\n        /* font-size: ", "; */\n        font-size: 14px;\n        color: ", ";\n      }\n      &:hover .todoSideBtnLabel {\n        color: ", ";\n      }\n     \n    }\n  }\n"]);
+
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+
+
+
+var Styles = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject(), function (props) {
+  return props.active ? function (_ref) {
+    var theme = _ref.theme;
+    return theme.colors.bgl;
+  } : '00000000';
+}, function (_ref2) {
+  var theme = _ref2.theme;
+  return theme.colors.bgl;
+}, function (_ref3) {
+  var theme = _ref3.theme;
+  return theme.colors.text;
+}, function (_ref4) {
+  var theme = _ref4.theme;
+  return theme.colors.text;
+}, function (_ref5) {
+  var theme = _ref5.theme;
+  return theme.fontSizes[0];
+}, function (_ref6) {
+  var theme = _ref6.theme;
+  return theme.colors.textLight;
+}, function (_ref7) {
+  var theme = _ref7.theme;
+  return theme.colors.text;
+});
+var TodoSideBtnNum = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject2(), function (_ref8) {
+  var theme = _ref8.theme;
+  return theme.colors.textLight;
+});
+
+var SidebarTab = function SidebarTab(_ref9) {
+  var children = _ref9.children,
+      num = _ref9.num,
+      label = _ref9.label;
+  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Styles, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 48
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "todoSideBtn",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 49
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "sideBtn",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 50
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "todoSideBtnLabel",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 51
+    },
+    __self: this
+  }, ' ', react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 53
+    },
+    __self: this
+  }, label)), label === 'Tab1' && react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "tabContent",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 55
+    },
+    __self: this
+  }, " ", children, " "), num && react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(TodoSideBtnNum, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 57
+    },
+    __self: this
+  }, "3"))));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (SidebarTab);
+
+/***/ }),
+
+/***/ "./components/ui/Tabs.js":
+/*!*******************************!*\
+  !*** ./components/ui/Tabs.js ***!
+  \*******************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+var _jsxFileName = "/Users/j/Desktop/pro-todo-app/components/ui/Tabs.js";
+
+/* harmony default export */ __webpack_exports__["default"] = (function (_ref) {
+  var children = _ref.children;
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    style: {
+      background: 'limegreen'
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 6
+    },
+    __self: this
+  }, children));
+});
 
 /***/ }),
 
@@ -35576,7 +35745,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_ui_Align__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../components/ui/Align */ "./components/ui/Align.js");
 /* harmony import */ var _components_ui_Button__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../components/ui/Button */ "./components/ui/Button.js");
 /* harmony import */ var _components_ui_Divider__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../components/ui/Divider */ "./components/ui/Divider.js");
-/* harmony import */ var _components_ui_TextField__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../components/ui/TextField */ "./components/ui/TextField.js");
+/* harmony import */ var _components_ui_Tab__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../components/ui/Tab */ "./components/ui/Tab.js");
+/* harmony import */ var _components_ui_Tabs__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../components/ui/Tabs */ "./components/ui/Tabs.js");
+/* harmony import */ var _components_ui_TextField__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../components/ui/TextField */ "./components/ui/TextField.js");
 
 
 var _jsxFileName = "/Users/j/Desktop/pro-todo-app/pages/Login.js";
@@ -35703,6 +35874,8 @@ function _templateObject() {
 
 
 
+
+
 var ShowHide = styled_components__WEBPACK_IMPORTED_MODULE_6__["default"].div(_templateObject(), function (props) {
   return props.hide && Object(styled_components__WEBPACK_IMPORTED_MODULE_6__["css"])(_templateObject2());
 });
@@ -35772,7 +35945,7 @@ var Login = function Login(_ref15) {
   var _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_4__["useState"])(true),
       _useState4 = Object(_babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_0__["default"])(_useState3, 2),
       show = _useState4[0],
-      toggleShow = _useState4[1];
+      setShow = _useState4[1];
 
   var handleAddListIsShown = function handleAddListIsShown(e) {
     setAddListIsShown(function (prev) {
@@ -35854,96 +36027,135 @@ var Login = function Login(_ref15) {
   return react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_components_Layout__WEBPACK_IMPORTED_MODULE_7__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 279
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(Styles, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 280
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("div", {
-    className: "wrapper",
-    __source: {
-      fileName: _jsxFileName,
       lineNumber: 281
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(ShowHide, {
+  }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(Styles, {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 282
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("div", {
-    className: "sideBar",
+    className: "wrapper",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 283
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_components_sidebar__WEBPACK_IMPORTED_MODULE_8__["UserInfo"], {
+  }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("div", {
+    className: "sideBar",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 284
     },
     __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("div", {
-    className: "sidebarMain",
+  }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("div", {
+    style: {
+      opacity: 0
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 285
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_components_sidebar__WEBPACK_IMPORTED_MODULE_8__["UserInfo"], {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 286
     },
     __self: this
+  })), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("div", {
+    className: "sidebarMain",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 289
+    },
+    __self: this
   }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_components_sidebar__WEBPACK_IMPORTED_MODULE_8__["SidebarTab"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 287
+      lineNumber: 290
     },
     __self: this
   }, "LOGIN"), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_components_sidebar__WEBPACK_IMPORTED_MODULE_8__["SidebarTab"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 288
+      lineNumber: 291
     },
     __self: this
-  }, "SIGNUP")), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("div", {
+  }, "SIGNUP"), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_components_ui_Tabs__WEBPACK_IMPORTED_MODULE_14__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 292
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_components_ui_Tab__WEBPACK_IMPORTED_MODULE_13__["default"], {
+    label: "Tab1",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 293
+    },
+    __self: this
+  }, " content of Tab1"), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_components_ui_Tab__WEBPACK_IMPORTED_MODULE_13__["default"], {
+    label: "Tab2",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 294
+    },
+    __self: this
+  }, " content of Tab2"), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_components_ui_Tab__WEBPACK_IMPORTED_MODULE_13__["default"], {
+    label: "Tab3",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 295
+    },
+    __self: this
+  }, " content of Tab3"))), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("div", {
+    style: {
+      opacity: 0
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 299
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("div", {
     className: "mode",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 291
+      lineNumber: 300
     },
     __self: this
   }, "Zen"))), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("div", {
     className: "content",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 295
+      lineNumber: 304
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_components_ui_Align__WEBPACK_IMPORTED_MODULE_10__["default"], {
     ha: "center",
     va: "center",
-    width: "450px",
+    width: "400px",
     stack: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 296
+      lineNumber: 305
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(react_spring__WEBPACK_IMPORTED_MODULE_5__["animated"].div, {
     style: femail,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 297
+      lineNumber: 306
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(react_spring__WEBPACK_IMPORTED_MODULE_5__["animated"].div, {
     style: favatar,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 298
+      lineNumber: 307
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_components_ui_Align__WEBPACK_IMPORTED_MODULE_10__["default"], {
@@ -35951,41 +36163,44 @@ var Login = function Login(_ref15) {
     va: "center",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 299
+      lineNumber: 308
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_components_svg__WEBPACK_IMPORTED_MODULE_9__["AvatarSvg"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 300
+      lineNumber: 309
     },
     __self: this
   }))), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(react_spring__WEBPACK_IMPORTED_MODULE_5__["animated"].div, {
     style: flabel,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 303
+      lineNumber: 312
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(Label, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 304
+      lineNumber: 313
     },
     __self: this
   }, " Email ")), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(react_spring__WEBPACK_IMPORTED_MODULE_5__["animated"].div, {
     style: finput,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 306
+      lineNumber: 315
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(InputEmail, {
     autoFocus: true,
     placeholder: "enter your email here",
+    onClick: function onClick(e) {
+      return setShow(true);
+    },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 307
+      lineNumber: 316
     },
     __self: this
   }))), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_components_ui_Divider__WEBPACK_IMPORTED_MODULE_12__["default"], {
@@ -35993,7 +36208,7 @@ var Login = function Login(_ref15) {
     height: "16px",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 317
+      lineNumber: 330
     },
     __self: this
   }), show && react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_components_ui_Align__WEBPACK_IMPORTED_MODULE_10__["default"], {
@@ -36001,67 +36216,67 @@ var Login = function Login(_ref15) {
     va: "center",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 319
+      lineNumber: 332
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
     href: "/Signedin",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 320
+      lineNumber: 333
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("a", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 321
+      lineNumber: 334
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_components_svg__WEBPACK_IMPORTED_MODULE_9__["SubmitSvg"], {
     flat: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 324
+      lineNumber: 337
     },
     __self: this
   }))), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(Icon, {
     className: "big-svg",
     onClick: function onClick(e) {
-      return toggleShow(false);
+      return setShow(false);
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 328
+      lineNumber: 341
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_components_svg__WEBPACK_IMPORTED_MODULE_9__["SubmitSvg"], {
     next: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 329
+      lineNumber: 342
     },
     __self: this
   }))), !show && react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(react_spring__WEBPACK_IMPORTED_MODULE_5__["animated"].div, {
     style: fpassword,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 334
+      lineNumber: 347
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(ShowHide, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 335
+      lineNumber: 348
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_components_ui_TextField__WEBPACK_IMPORTED_MODULE_13__["default"], {
+  }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_components_ui_TextField__WEBPACK_IMPORTED_MODULE_15__["default"], {
     autoFocus: true,
     label: "Password",
     type: "password",
     placeholder: "enter your Password here",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 336
+      lineNumber: 349
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_components_ui_Divider__WEBPACK_IMPORTED_MODULE_12__["default"], {
@@ -36069,7 +36284,7 @@ var Login = function Login(_ref15) {
     height: "16px",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 342
+      lineNumber: 355
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_components_ui_Align__WEBPACK_IMPORTED_MODULE_10__["default"], {
@@ -36077,20 +36292,20 @@ var Login = function Login(_ref15) {
     placing: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 343
+      lineNumber: 356
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_components_ui_Button__WEBPACK_IMPORTED_MODULE_11__["default"], {
     pad: 0.01,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 344
+      lineNumber: 357
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 345
+      lineNumber: 358
     },
     __self: this
   }, "Create an acount")), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("div", {
@@ -36099,7 +36314,7 @@ var Login = function Login(_ref15) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 347
+      lineNumber: 360
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_components_ui_Align__WEBPACK_IMPORTED_MODULE_10__["default"], {
@@ -36107,109 +36322,109 @@ var Login = function Login(_ref15) {
     va: "center",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 348
+      lineNumber: 361
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(IconFlat, {
     className: "big-svg-flat",
     onClick: function onClick(e) {
-      return toggleShow(true);
+      return setShow(true);
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 349
+      lineNumber: 362
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_components_svg__WEBPACK_IMPORTED_MODULE_9__["SubmitSvg"], {
     flat: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 353
+      lineNumber: 366
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(Icon, {
     className: "big-svg",
     onClick: function onClick(e) {
-      return toggleShow(true);
+      return setShow(true);
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 356
+      lineNumber: 369
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
     href: "/Signedin",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 360
+      lineNumber: 373
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("a", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 361
+      lineNumber: 374
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_components_svg__WEBPACK_IMPORTED_MODULE_9__["SubmitSvg"], {
     next: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 364
+      lineNumber: 377
     },
     __self: this
   }))))))))), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_components_ui_Divider__WEBPACK_IMPORTED_MODULE_12__["default"], {
     transparent: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 374
+      lineNumber: 387
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(ShowHide, {
     hide: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 376
+      lineNumber: 389
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_components_ui_TextField__WEBPACK_IMPORTED_MODULE_13__["default"], {
+  }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_components_ui_TextField__WEBPACK_IMPORTED_MODULE_15__["default"], {
     autoFocus: true,
     label: "Password",
     placeholder: "enter your Password here",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 377
+      lineNumber: 390
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_components_ui_Divider__WEBPACK_IMPORTED_MODULE_12__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 382
+      lineNumber: 395
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
     href: "/Signedin",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 384
+      lineNumber: 397
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("a", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 385
+      lineNumber: 398
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_components_ui_Button__WEBPACK_IMPORTED_MODULE_11__["default"], {
     primary: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 386
+      lineNumber: 399
     },
     __self: this
   }, "LOGIN"), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_components_ui_Button__WEBPACK_IMPORTED_MODULE_11__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 387
+      lineNumber: 400
     },
     __self: this
   }, "CANCEL")))))))));

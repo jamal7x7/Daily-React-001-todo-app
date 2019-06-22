@@ -12,9 +12,11 @@ const Styles = styled.div`
       display: grid;
       grid-template-columns: 1fr 28px;
       grid-template-rows: auto;
+        background: ${props =>
+          props.active ? ({ theme }) => theme.colors.bgl : '00000000'};
       cursor: pointer;
       &:hover {
-        background: ${({ theme }) => theme.colors.bgl};
+        background: ${({ theme }) => theme.colors.bgl} ;
         color: ${({ theme }) => theme.colors.text};
       }
       &:hover .todoListNum {
@@ -24,31 +26,38 @@ const Styles = styled.div`
       .todoSideBtnLabel {
         display: grid;
         place-items: center start;
-        font-size: ${({ theme }) => theme.fontSizes[0]};
+        /* font-size: ${({ theme }) => theme.fontSizes[0]}; */
+        font-size: 14px;
         color: ${({ theme }) => theme.colors.textLight};
       }
       &:hover .todoSideBtnLabel {
         color: ${({ theme }) => theme.colors.text};
       }
-      .todoSideBtnNum {
-        display: grid;
-        place-items: center;
-        font-size: 12px;
-        color: ${({ theme }) => theme.colors.textLight};
-      }
+     
     }
   }
 `
+const TodoSideBtnNum = styled.div`
+  display: grid;
+  place-items: center;
+  font-size: 12px;
+  color: ${({ theme }) => theme.colors.textLight};
+`
 
-const Tab = ({ children }) => (
+const SidebarTab = ({ children, num, label }) => (
   <Styles>
     <div className='todoSideBtn'>
       <div className='sideBtn'>
-        <div className='todoSideBtnLabel'> {children} </div>
-        <div className='todoSideBtnNum'>3</div>
+        <div className='todoSideBtnLabel'>
+          {' '}
+          <div>{label}</div>
+        </div>
+        {label === 'Tab1' && <div className='tabContent'> {children} </div>}
+
+        {num && <TodoSideBtnNum>3</TodoSideBtnNum>}
       </div>
     </div>
   </Styles>
 )
 
-export default Tab
+export default SidebarTab

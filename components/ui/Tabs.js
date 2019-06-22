@@ -1,10 +1,9 @@
-import React from "react"
-import ProjectSvg from "../svg/ProjectSvg"
+import React from 'react'
 
-export default () => {
+export default ({ children }) => {
   return (
     <>
-      <ProjectSvg />
+      <div style={{ background: 'limegreen' }}>{children}</div>
     </>
   )
 }

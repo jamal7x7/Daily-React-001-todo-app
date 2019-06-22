@@ -9,6 +9,8 @@ import { AvatarSvg, SubmitSvg } from '../components/svg'
 import Align from '../components/ui/Align'
 import Button from '../components/ui/Button'
 import Divider from '../components/ui/Divider'
+import Tab from '../components/ui/Tab'
+import Tabs from '../components/ui/Tabs'
 import TextField from '../components/ui/TextField'
 
 const ShowHide = styled.div`
@@ -200,7 +202,7 @@ const Login = ({ userSignedin, setUserSignedin }) => {
   const didRun = useRef(false)
 
   const [addTaskIsShown, setAddTaskIsShown] = useState(false)
-  const [show, toggleShow] = useState(true)
+  const [show, setShow] = useState(true)
 
   const handleAddListIsShown = e => {
     setAddListIsShown(prev => !prev)
@@ -279,21 +281,28 @@ const Login = ({ userSignedin, setUserSignedin }) => {
     <Layout>
       <Styles>
         <div className='wrapper'>
-          <ShowHide>
-            <div className='sideBar'>
+          <div className='sideBar'>
+            <div style={{ opacity: 0 }}>
               <UserInfo />
+            </div>
 
-              <div className='sidebarMain'>
-                <SidebarTab>LOGIN</SidebarTab>
-                <SidebarTab>SIGNUP</SidebarTab>
-              </div>
+            <div className='sidebarMain'>
+              <SidebarTab>LOGIN</SidebarTab>
+              <SidebarTab>SIGNUP</SidebarTab>
+              <Tabs>
+                <Tab label='Tab1'> content of Tab1</Tab>
+                <Tab label='Tab2'> content of Tab2</Tab>
+                <Tab label='Tab3'> content of Tab3</Tab>
+              </Tabs>
+            </div>
 
+            <div style={{ opacity: 0 }}>
               <div className='mode'>Zen</div>
             </div>
-          </ShowHide>
+          </div>
 
           <div className='content'>
-            <Align ha='center' va='center' width='450px' stack>
+            <Align ha='center' va='center' width='400px' stack>
               <animated.div style={femail}>
                 <animated.div style={favatar}>
                   <Align ha='center' va='center'>
@@ -304,7 +313,11 @@ const Login = ({ userSignedin, setUserSignedin }) => {
                   <Label> Email </Label>
                 </animated.div>
                 <animated.div style={finput}>
-                  <InputEmail autoFocus placeholder='enter your email here' />
+                  <InputEmail
+                    autoFocus
+                    placeholder='enter your email here'
+                    onClick={e => setShow(true)}
+                  />
                 </animated.div>
                 {/*<TextField
                     autoFocus
@@ -325,7 +338,7 @@ const Login = ({ userSignedin, setUserSignedin }) => {
                     </a>
                   </Link>
 
-                  <Icon className='big-svg' onClick={e => toggleShow(false)}>
+                  <Icon className='big-svg' onClick={e => setShow(false)}>
                     <SubmitSvg next />
                   </Icon>
                 </Align>
@@ -348,14 +361,14 @@ const Login = ({ userSignedin, setUserSignedin }) => {
                         <Align ha='end' va='center'>
                           <IconFlat
                             className='big-svg-flat'
-                            onClick={e => toggleShow(true)}
+                            onClick={e => setShow(true)}
                           >
                             <SubmitSvg flat />
                           </IconFlat>
 
                           <Icon
                             className='big-svg'
-                            onClick={e => toggleShow(true)}
+                            onClick={e => setShow(true)}
                           >
                             <Link href='/Signedin'>
                               <a>
