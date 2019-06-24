@@ -1,41 +1,29 @@
+import { rgba } from 'polished'
 import React from 'react'
 import styled from 'styled-components'
 
-const Styles = styled.div`
-  .todoSideBtn {
-    padding: 0 16px 0 36px;
+const TodoSideBtn = styled.div`
+  padding: 0;
+  margin-bottom: 8px;
+`
+const SideBtnLabel = styled.div`
+  display: grid;
+  padding-left: 16px;
+  place-items: center start;
+  /* font-size: ${({ theme }) => theme.fontSizes[0]}; */
+  font-size: 14px;
+  color: ${({ theme }) => theme.colors.textLight};
+}
+&:hover .todoSideBtnLabel {
+  color: ${({ theme }) => theme.colors.text};
+}
+`
+const Icon = styled.div`
+  display: grid;
+  place-items: center;
+  border-radius: 8px;
 
-    .sideBtn {
-      height: 52px;
-      border-radius: 8px;
-      padding-left: 16px;
-      display: grid;
-      grid-template-columns: 1fr 28px;
-      grid-template-rows: auto;
-        background: ${props =>
-          props.active ? ({ theme }) => theme.colors.bgl : '00000000'};
-      cursor: pointer;
-      &:hover {
-        background: ${({ theme }) => theme.colors.bgl} ;
-        color: ${({ theme }) => theme.colors.text};
-      }
-      &:hover .todoListNum {
-        // background: $primary2;
-        color: ${({ theme }) => theme.colors.text};
-      }
-      .todoSideBtnLabel {
-        display: grid;
-        place-items: center start;
-        /* font-size: ${({ theme }) => theme.fontSizes[0]}; */
-        font-size: 14px;
-        color: ${({ theme }) => theme.colors.textLight};
-      }
-      &:hover .todoSideBtnLabel {
-        color: ${({ theme }) => theme.colors.text};
-      }
-     
-    }
-  }
+  background: ${({ theme }) => rgba(theme.colors.primary, 0.2)};
 `
 const TodoSideBtnNum = styled.div`
   display: grid;
@@ -43,21 +31,45 @@ const TodoSideBtnNum = styled.div`
   font-size: 12px;
   color: ${({ theme }) => theme.colors.textLight};
 `
+const SideBtn = styled.div`
+  height: 52px;
+  border-radius: 8px;
+  /* padding-left: 16px; */
+  display: grid;
+  grid-template-columns: 52px 1fr 28px;
+  grid-template-rows: auto;
+  background: ${props =>
+    props.active ? ({ theme }) => theme.colors.bgl : '00000000'};
+  cursor: pointer;
+  &:hover {
+    background: ${({ theme }) => rgba(theme.colors.bgl, 0.7)};
+    color: ${({ theme }) => theme.colors.text};
+  }
+  &:hover .todoListNum {
+    // background: $primary2;
+    color: ${({ theme }) => theme.colors.text};
+  }
+`
 
-const SidebarTab = ({ children, num, label }) => (
-  <Styles>
-    <div className='todoSideBtn'>
-      <div className='sideBtn'>
-        <div className='todoSideBtnLabel'>
-          {' '}
-          <div>{label}</div>
-        </div>
-        {label === 'Tab1' && <div className='tabContent'> {children} </div>}
+const SidebarTab = ({
+  children,
+  num,
+  label,
+  index,
+  active,
+  handleTabClick
+}) => (
+  <TodoSideBtn onClick={e => handleTabClick(e, label)}>
+    <SideBtn active={active}>
+      <Icon>||</Icon>
+      <SideBtnLabel>
+        {' '}
+        <div>{label}</div>
+      </SideBtnLabel>
 
-        {num && <TodoSideBtnNum>3</TodoSideBtnNum>}
-      </div>
-    </div>
-  </Styles>
+      {num && <TodoSideBtnNum>3</TodoSideBtnNum>}
+    </SideBtn>
+  </TodoSideBtn>
 )
 
 export default SidebarTab

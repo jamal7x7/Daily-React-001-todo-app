@@ -4,7 +4,7 @@ import React, { useRef, useState } from 'react'
 import { animated, useSpring } from 'react-spring'
 import styled, { css } from 'styled-components'
 import Layout from '../components/Layout'
-import { SidebarTab, UserInfo } from '../components/sidebar'
+import { UserInfo } from '../components/sidebar'
 import { AvatarSvg, SubmitSvg } from '../components/svg'
 import Align from '../components/ui/Align'
 import Button from '../components/ui/Button'
@@ -197,12 +197,16 @@ const InputEmail = styled.input`
   }
 `
 
+///////////////////////////////////////////COMPONENT//////////////////////////////////////////////
+
 const Login = ({ userSignedin, setUserSignedin }) => {
   const addListRef = useRef()
   const didRun = useRef(false)
 
   const [addTaskIsShown, setAddTaskIsShown] = useState(false)
   const [show, setShow] = useState(true)
+  const [show2, setShow2] = useState(true)
+  const [sidebarTab, setSidebarTab] = useState('LOGIN')
 
   const handleAddListIsShown = e => {
     setAddListIsShown(prev => !prev)
@@ -277,6 +281,21 @@ const Login = ({ userSignedin, setUserSignedin }) => {
     config: { mass: 1, tension: 500, friction: 30 }
   })
 
+  const handleTabClick = (e, label) => {
+    e.preventDefault()
+
+    setSidebarTab(p => label)
+    console.log(sidebarTab + '>>>>>>>>>>>>' + label + '<<<<<<<<<<<<<')
+
+    const el = e.target
+    el.classList.add('active')
+    console.log(el)
+  }
+
+  // useEffect(() => {
+  //   console.log(sidebarTab)
+  // })
+
   return (
     <Layout>
       <Styles>
@@ -287,122 +306,275 @@ const Login = ({ userSignedin, setUserSignedin }) => {
             </div>
 
             <div className='sidebarMain'>
+              <Tabs>
+                <Tab
+                  label='LOGIN'
+                  handleTabClick={handleTabClick}
+                  active={sidebarTab === 'LOGIN'}
+                />
+                <Tab
+                  label='SIGNOUT'
+                  handleTabClick={handleTabClick}
+                  active={sidebarTab === 'SIGNOUT'}
+                />
+              </Tabs>
+              {/* 
               <SidebarTab>LOGIN</SidebarTab>
               <SidebarTab>SIGNUP</SidebarTab>
-              <Tabs>
-                <Tab label='Tab1'> content of Tab1</Tab>
-                <Tab label='Tab2'> content of Tab2</Tab>
-                <Tab label='Tab3'> content of Tab3</Tab>
-              </Tabs>
+              */}
             </div>
 
             <div style={{ opacity: 0 }}>
               <div className='mode'>Zen</div>
             </div>
           </div>
+          {sidebarTab === 'LOGIN' && (
+            <div className='content'>
+              <Align ha='center' va='center' width='400px' stack>
+                <animated.div style={femail}>
+                  <animated.div style={favatar}>
+                    <Align ha='center' va='center'>
+                      <AvatarSvg />
+                    </Align>
+                  </animated.div>
+                  <animated.div style={flabel}>
+                    <Label> Email </Label>
+                  </animated.div>
+                  <animated.div style={finput}>
+                    <InputEmail
+                      autoFocus
+                      placeholder='enter your email here'
+                      onClick={e => setShow(true)}
+                    />
+                  </animated.div>
+                  {/*<TextField
+                        autoFocus
+                        label='Email'
+                        placeholder='enter your email here'
+                        show={show}
+                     />*/}
+                  {/*<Divider transparent height='0px' />*/}
+                </animated.div>
+                <Divider transparent height='16px' />
+                {show && (
+                  <Align ha='end' va='center'>
+                    <Link href='/Signedin'>
+                      <a>
+                        {/*<Button>BACK</Button>
+                                                <Button primary>NEXT</Button>*/}
+                        <SubmitSvg flat />
+                      </a>
+                    </Link>
 
-          <div className='content'>
-            <Align ha='center' va='center' width='400px' stack>
-              <animated.div style={femail}>
-                <animated.div style={favatar}>
-                  <Align ha='center' va='center'>
-                    <AvatarSvg />
+                    <Icon className='big-svg' onClick={e => setShow(false)}>
+                      <SubmitSvg next />
+                    </Icon>
                   </Align>
-                </animated.div>
-                <animated.div style={flabel}>
-                  <Label> Email </Label>
-                </animated.div>
-                <animated.div style={finput}>
-                  <InputEmail
+                )}
+                {!show && (
+                  <animated.div style={fpassword}>
+                    <ShowHide>
+                      <TextField
+                        autoFocus
+                        label='Password'
+                        type='password'
+                        placeholder='enter your Password here'
+                      />
+                      <Divider transparent height='16px' />
+                      <Align va='center' placing>
+                        <Button pad={0.01}>
+                          <div>Create an acount</div>
+                        </Button>
+                        <div style={{ display: 'flex' }}>
+                          <Align ha='end' va='center'>
+                            <IconFlat
+                              className='big-svg-flat'
+                              onClick={e => setShow(true)}
+                            >
+                              <SubmitSvg flat />
+                            </IconFlat>
+
+                            <Icon
+                              className='big-svg'
+                              onClick={e => setShow(true)}
+                            >
+                              <Link href='/Signedin'>
+                                <a>
+                                  {/*<Button>BACK</Button>
+    <Button primary>NEXT</Button>*/}
+                                  <SubmitSvg next />
+                                </a>
+                              </Link>
+                            </Icon>
+                          </Align>
+                        </div>
+                      </Align>
+                    </ShowHide>
+                  </animated.div>
+                )}
+                <Divider transparent />
+
+                <ShowHide hide>
+                  <TextField
                     autoFocus
-                    placeholder='enter your email here'
-                    onClick={e => setShow(true)}
+                    label='Password'
+                    placeholder='enter your Password here'
                   />
-                </animated.div>
-                {/*<TextField
-                    autoFocus
-                    label='Email'
-                    placeholder='enter your email here'
-                    show={show}
-                 />*/}
-                {/*<Divider transparent height='0px' />*/}
-              </animated.div>
-              <Divider transparent height='16px' />
-              {show && (
-                <Align ha='end' va='center'>
+                  <Divider />
+
                   <Link href='/Signedin'>
                     <a>
-                      {/*<Button>BACK</Button>
-                                            <Button primary>NEXT</Button>*/}
-                      <SubmitSvg flat />
+                      <Button primary>LOGIN</Button>
+                      <Button>CANCEL</Button>
                     </a>
                   </Link>
+                </ShowHide>
+              </Align>
+            </div>
+          )}
 
-                  <Icon className='big-svg' onClick={e => setShow(false)}>
-                    <SubmitSvg next />
-                  </Icon>
-                </Align>
-              )}
-              {!show && (
-                <animated.div style={fpassword}>
-                  <ShowHide>
-                    <TextField
-                      autoFocus
-                      label='Password'
-                      type='password'
-                      placeholder='enter your Password here'
-                    />
-                    <Divider transparent height='16px' />
-                    <Align va='center' placing>
-                      <Button pad={0.01}>
-                        <div>Create an acount</div>
-                      </Button>
-                      <div style={{ display: 'flex' }}>
-                        <Align ha='end' va='center'>
-                          <IconFlat
-                            className='big-svg-flat'
-                            onClick={e => setShow(true)}
-                          >
-                            <SubmitSvg flat />
-                          </IconFlat>
-
-                          <Icon
-                            className='big-svg'
-                            onClick={e => setShow(true)}
-                          >
-                            <Link href='/Signedin'>
-                              <a>
-                                {/*<Button>BACK</Button>
-<Button primary>NEXT</Button>*/}
-                                <SubmitSvg next />
-                              </a>
-                            </Link>
-                          </Icon>
-                        </Align>
-                      </div>
+          {sidebarTab === 'SIGNOUT' && (
+            <div className='content'>
+              <Align ha='center' va='center' width='400px' stack>
+                <animated.div style={femail}>
+                  <animated.div style={favatar}>
+                    <Align ha='center' va='center'>
+                      <AvatarSvg />
                     </Align>
-                  </ShowHide>
+                  </animated.div>
+                  <animated.div style={flabel}>
+                    <Label> Email </Label>
+                  </animated.div>
+                  <animated.div style={finput}>
+                    <InputEmail
+                      autoFocus
+                      placeholder='enter your email here'
+                      onClick={e => setShow(true)}
+                    />
+                  </animated.div>
+                  {/*<TextField
+                        autoFocus
+                        label='Email'
+                        placeholder='enter your email here'
+                        show={show}
+                     />*/}
+                  {/*<Divider transparent height='0px' />*/}
                 </animated.div>
-              )}
-              <Divider transparent />
+                <Divider transparent height='16px' />
+                {show && (
+                  <Align ha='end' va='center'>
+                    <Link href='/Signedin'>
+                      <a>
+                        {/*<Button>BACK</Button>
+                                                <Button primary>NEXT</Button>*/}
+                        <SubmitSvg flat />
+                      </a>
+                    </Link>
 
-              <ShowHide hide>
-                <TextField
-                  autoFocus
-                  label='Password'
-                  placeholder='enter your Password here'
-                />
-                <Divider />
+                    <Icon className='big-svg' onClick={e => setShow(false)}>
+                      <SubmitSvg next />
+                    </Icon>
+                  </Align>
+                )}
+                {!show && (
+                  <animated.div style={fpassword}>
+                    <ShowHide>
+                      <TextField
+                        autoFocus
+                        label='Password'
+                        type='password'
+                        placeholder='enter your Password here'
+                      />
 
-                <Link href='/Signedin'>
-                  <a>
-                    <Button primary>LOGIN</Button>
-                    <Button>CANCEL</Button>
-                  </a>
-                </Link>
-              </ShowHide>
-            </Align>
-          </div>
+                      <Divider transparent height='16px' />
+                      <Align va='center' placing>
+                        <Button pad={0.01}>
+                          <div>Create an acount</div>
+                        </Button>
+                        <div style={{ display: 'flex' }}>
+                          <Align ha='end' va='center'>
+                            <IconFlat
+                              className='big-svg-flat'
+                              onClick={e => setShow(true)}
+                            >
+                              <SubmitSvg flat />
+                            </IconFlat>
+
+                            <Icon
+                              className='big-svg'
+                              onClick={e => setShow2(false)}
+                            >
+                              <SubmitSvg next />
+                            </Icon>
+                          </Align>
+                        </div>
+                      </Align>
+                    </ShowHide>
+                  </animated.div>
+                )}
+                {!show2 && (
+                  <animated.div style={fpassword}>
+                    <ShowHide>
+                      <TextField
+                        autoFocus
+                        label='Password'
+                        type='password'
+                        placeholder='enter your Password here'
+                      />
+
+                      <Divider transparent height='16px' />
+                      <Align va='center' placing>
+                        <Button pad={0.01}>
+                          <div>Create an acount</div>
+                        </Button>
+                        <div style={{ display: 'flex' }}>
+                          <Align ha='end' va='center'>
+                            <IconFlat
+                              className='big-svg-flat'
+                              onClick={e => setShow(true)}
+                            >
+                              <SubmitSvg flat />
+                            </IconFlat>
+
+                            <Icon
+                              className='big-svg'
+                              onClick={e => setShow(true)}
+                            >
+                              <Link href='/Signedin'>
+                                <a>
+                                  {/*<Button>BACK</Button>
+    <Button primary>NEXT</Button>*/}
+                                  <SubmitSvg next />
+                                </a>
+                              </Link>
+                            </Icon>
+                          </Align>
+                        </div>
+                      </Align>
+                    </ShowHide>
+                  </animated.div>
+                )}
+
+                <Divider transparent />
+
+                <ShowHide hide>
+                  <TextField
+                    autoFocus
+                    label='Password'
+                    placeholder='enter your Password here'
+                  />
+                  <Divider />
+
+                  <Link href='/Signedin'>
+                    <a>
+                      <Button primary>LOGIN</Button>
+                      <Button>CANCEL</Button>
+                    </a>
+                  </Link>
+                </ShowHide>
+              </Align>
+            </div>
+          )}
         </div>
       </Styles>
     </Layout>

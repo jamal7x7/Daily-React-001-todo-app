@@ -12,7 +12,7 @@ const Styles = styled.div`
     /* width: 100%; */
     left: calc(50% - 100px);
     /* left: 35px; */
-    top: 0px;
+    top: 8px;
     position: absolute;
     z-index: 100000000;
   }

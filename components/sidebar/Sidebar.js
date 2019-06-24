@@ -1,7 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
+import Tab from '../ui/Tab'
+import Tabs from '../ui/Tabs'
 import ProjectList from './ProjectList'
-import SidebarTab from './SidebarTab'
 import UserInfo from './UserInfo'
 
 const Styles = styled.div`
@@ -98,8 +99,10 @@ const Sidebar = ({
       <UserInfo />
 
       <div className='sidebarMain'>
-        <SidebarTab>TODOS</SidebarTab>
-        <SidebarTab>CALENDAR</SidebarTab>
+        <Tabs>
+          <Tab label='TODOS' />
+          <Tab label='CALENDAR' />
+        </Tabs>
 
         <div className='projects'> LISTS </div>
 
