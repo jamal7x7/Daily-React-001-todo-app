@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 6);
+/******/ 	return __webpack_require__(__webpack_require__.s = 5);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -3639,21 +3639,21 @@ var Login = function Login(_ref15) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 327
+      lineNumber: 328
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("div", {
     className: "mode",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 328
+      lineNumber: 329
     },
     __self: this
   }, "Zen"))), sidebarTab === 'LOGIN' && react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("div", {
     className: "content",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 332
+      lineNumber: 333
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_components_ui_Align__WEBPACK_IMPORTED_MODULE_10__["default"], {
@@ -3663,21 +3663,21 @@ var Login = function Login(_ref15) {
     stack: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 333
+      lineNumber: 334
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(react_spring__WEBPACK_IMPORTED_MODULE_5__["animated"].div, {
     style: femail,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 334
+      lineNumber: 335
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(react_spring__WEBPACK_IMPORTED_MODULE_5__["animated"].div, {
     style: favatar,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 335
+      lineNumber: 336
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_components_ui_Align__WEBPACK_IMPORTED_MODULE_10__["default"], {
@@ -3685,33 +3685,33 @@ var Login = function Login(_ref15) {
     va: "center",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 336
+      lineNumber: 337
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_components_svg__WEBPACK_IMPORTED_MODULE_9__["AvatarSvg"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 337
+      lineNumber: 338
     },
     __self: this
   }))), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(react_spring__WEBPACK_IMPORTED_MODULE_5__["animated"].div, {
     style: flabel,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 340
+      lineNumber: 341
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(Label, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 341
+      lineNumber: 342
     },
     __self: this
   }, " Email ")), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(react_spring__WEBPACK_IMPORTED_MODULE_5__["animated"].div, {
     style: finput,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 343
+      lineNumber: 344
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(InputEmail, {
@@ -3722,7 +3722,7 @@ var Login = function Login(_ref15) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 344
+      lineNumber: 345
     },
     __self: this
   }))), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_components_ui_Divider__WEBPACK_IMPORTED_MODULE_12__["default"], {
@@ -3730,7 +3730,7 @@ var Login = function Login(_ref15) {
     height: "16px",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 358
+      lineNumber: 359
     },
     __self: this
   }), show && react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_components_ui_Align__WEBPACK_IMPORTED_MODULE_10__["default"], {
@@ -3738,27 +3738,27 @@ var Login = function Login(_ref15) {
     va: "center",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 360
+      lineNumber: 361
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
     href: "/Signedin",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 361
+      lineNumber: 362
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("a", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 362
+      lineNumber: 363
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_components_svg__WEBPACK_IMPORTED_MODULE_9__["SubmitSvg"], {
     flat: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 365
+      lineNumber: 366
     },
     __self: this
   }))), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(Icon, {
@@ -3768,27 +3768,27 @@ var Login = function Login(_ref15) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 369
+      lineNumber: 370
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_components_svg__WEBPACK_IMPORTED_MODULE_9__["SubmitSvg"], {
     next: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 370
+      lineNumber: 371
     },
     __self: this
   }))), !show && react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(react_spring__WEBPACK_IMPORTED_MODULE_5__["animated"].div, {
     style: fpassword,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 375
+      lineNumber: 376
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(ShowHide, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 376
+      lineNumber: 377
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_components_ui_TextField__WEBPACK_IMPORTED_MODULE_15__["default"], {
@@ -3798,7 +3798,7 @@ var Login = function Login(_ref15) {
     placeholder: "enter your Password here",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 377
+      lineNumber: 378
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_components_ui_Divider__WEBPACK_IMPORTED_MODULE_12__["default"], {
@@ -3806,7 +3806,7 @@ var Login = function Login(_ref15) {
     height: "16px",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 383
+      lineNumber: 384
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_components_ui_Align__WEBPACK_IMPORTED_MODULE_10__["default"], {
@@ -3814,20 +3814,20 @@ var Login = function Login(_ref15) {
     placing: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 384
+      lineNumber: 385
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_components_ui_Button__WEBPACK_IMPORTED_MODULE_11__["default"], {
     pad: 0.01,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 385
+      lineNumber: 386
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 386
+      lineNumber: 387
     },
     __self: this
   }, "Create an acount")), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("div", {
@@ -3836,7 +3836,7 @@ var Login = function Login(_ref15) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 388
+      lineNumber: 389
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_components_ui_Align__WEBPACK_IMPORTED_MODULE_10__["default"], {
@@ -3844,7 +3844,7 @@ var Login = function Login(_ref15) {
     va: "center",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 389
+      lineNumber: 390
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(IconFlat, {
@@ -3854,14 +3854,14 @@ var Login = function Login(_ref15) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 390
+      lineNumber: 391
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_components_svg__WEBPACK_IMPORTED_MODULE_9__["SubmitSvg"], {
     flat: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 394
+      lineNumber: 395
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(Icon, {
@@ -3871,41 +3871,41 @@ var Login = function Login(_ref15) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 397
+      lineNumber: 398
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
     href: "/Signedin",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 401
+      lineNumber: 402
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("a", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 402
+      lineNumber: 403
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_components_svg__WEBPACK_IMPORTED_MODULE_9__["SubmitSvg"], {
     next: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 405
+      lineNumber: 406
     },
     __self: this
   }))))))))), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_components_ui_Divider__WEBPACK_IMPORTED_MODULE_12__["default"], {
     transparent: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 415
+      lineNumber: 416
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(ShowHide, {
     hide: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 417
+      lineNumber: 418
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_components_ui_TextField__WEBPACK_IMPORTED_MODULE_15__["default"], {
@@ -3914,46 +3914,46 @@ var Login = function Login(_ref15) {
     placeholder: "enter your Password here",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 418
+      lineNumber: 419
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_components_ui_Divider__WEBPACK_IMPORTED_MODULE_12__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 423
+      lineNumber: 424
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
     href: "/Signedin",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 425
+      lineNumber: 426
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("a", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 426
+      lineNumber: 427
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_components_ui_Button__WEBPACK_IMPORTED_MODULE_11__["default"], {
     primary: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 427
+      lineNumber: 428
     },
     __self: this
   }, "LOGIN"), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_components_ui_Button__WEBPACK_IMPORTED_MODULE_11__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 428
+      lineNumber: 429
     },
     __self: this
   }, "CANCEL")))))), sidebarTab === 'SIGNOUT' && react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("div", {
     className: "content",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 437
+      lineNumber: 438
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_components_ui_Align__WEBPACK_IMPORTED_MODULE_10__["default"], {
@@ -3963,21 +3963,21 @@ var Login = function Login(_ref15) {
     stack: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 438
+      lineNumber: 439
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(react_spring__WEBPACK_IMPORTED_MODULE_5__["animated"].div, {
     style: femail,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 439
+      lineNumber: 440
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(react_spring__WEBPACK_IMPORTED_MODULE_5__["animated"].div, {
     style: favatar,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 440
+      lineNumber: 441
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_components_ui_Align__WEBPACK_IMPORTED_MODULE_10__["default"], {
@@ -3985,33 +3985,33 @@ var Login = function Login(_ref15) {
     va: "center",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 441
+      lineNumber: 442
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_components_svg__WEBPACK_IMPORTED_MODULE_9__["AvatarSvg"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 442
+      lineNumber: 443
     },
     __self: this
   }))), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(react_spring__WEBPACK_IMPORTED_MODULE_5__["animated"].div, {
     style: flabel,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 445
+      lineNumber: 446
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(Label, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 446
+      lineNumber: 447
     },
     __self: this
   }, " Email ")), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(react_spring__WEBPACK_IMPORTED_MODULE_5__["animated"].div, {
     style: finput,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 448
+      lineNumber: 449
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(InputEmail, {
@@ -4022,7 +4022,7 @@ var Login = function Login(_ref15) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 449
+      lineNumber: 450
     },
     __self: this
   }))), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_components_ui_Divider__WEBPACK_IMPORTED_MODULE_12__["default"], {
@@ -4030,7 +4030,7 @@ var Login = function Login(_ref15) {
     height: "16px",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 463
+      lineNumber: 464
     },
     __self: this
   }), show && react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_components_ui_Align__WEBPACK_IMPORTED_MODULE_10__["default"], {
@@ -4038,27 +4038,27 @@ var Login = function Login(_ref15) {
     va: "center",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 465
+      lineNumber: 466
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
     href: "/Signedin",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 466
+      lineNumber: 467
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("a", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 467
+      lineNumber: 468
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_components_svg__WEBPACK_IMPORTED_MODULE_9__["SubmitSvg"], {
     flat: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 470
+      lineNumber: 471
     },
     __self: this
   }))), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(Icon, {
@@ -4068,27 +4068,27 @@ var Login = function Login(_ref15) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 474
+      lineNumber: 475
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_components_svg__WEBPACK_IMPORTED_MODULE_9__["SubmitSvg"], {
     next: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 475
+      lineNumber: 476
     },
     __self: this
   }))), !show && react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(react_spring__WEBPACK_IMPORTED_MODULE_5__["animated"].div, {
     style: fpassword,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 480
+      lineNumber: 481
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(ShowHide, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 481
+      lineNumber: 482
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_components_ui_TextField__WEBPACK_IMPORTED_MODULE_15__["default"], {
@@ -4098,7 +4098,7 @@ var Login = function Login(_ref15) {
     placeholder: "enter your Password here",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 482
+      lineNumber: 483
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_components_ui_Divider__WEBPACK_IMPORTED_MODULE_12__["default"], {
@@ -4106,7 +4106,7 @@ var Login = function Login(_ref15) {
     height: "16px",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 489
+      lineNumber: 490
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_components_ui_Align__WEBPACK_IMPORTED_MODULE_10__["default"], {
@@ -4114,20 +4114,20 @@ var Login = function Login(_ref15) {
     placing: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 490
+      lineNumber: 491
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_components_ui_Button__WEBPACK_IMPORTED_MODULE_11__["default"], {
     pad: 0.01,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 491
+      lineNumber: 492
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 492
+      lineNumber: 493
     },
     __self: this
   }, "Create an acount")), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("div", {
@@ -4136,7 +4136,7 @@ var Login = function Login(_ref15) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 494
+      lineNumber: 495
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_components_ui_Align__WEBPACK_IMPORTED_MODULE_10__["default"], {
@@ -4144,7 +4144,7 @@ var Login = function Login(_ref15) {
     va: "center",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 495
+      lineNumber: 496
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(IconFlat, {
@@ -4154,14 +4154,14 @@ var Login = function Login(_ref15) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 496
+      lineNumber: 497
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_components_svg__WEBPACK_IMPORTED_MODULE_9__["SubmitSvg"], {
     flat: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 500
+      lineNumber: 501
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(Icon, {
@@ -4171,27 +4171,27 @@ var Login = function Login(_ref15) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 503
+      lineNumber: 504
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_components_svg__WEBPACK_IMPORTED_MODULE_9__["SubmitSvg"], {
     next: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 507
+      lineNumber: 508
     },
     __self: this
   }))))))), !show2 && react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(react_spring__WEBPACK_IMPORTED_MODULE_5__["animated"].div, {
     style: fpassword,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 516
+      lineNumber: 517
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(ShowHide, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 517
+      lineNumber: 518
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_components_ui_TextField__WEBPACK_IMPORTED_MODULE_15__["default"], {
@@ -4201,7 +4201,7 @@ var Login = function Login(_ref15) {
     placeholder: "enter your Password here",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 518
+      lineNumber: 519
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_components_ui_Divider__WEBPACK_IMPORTED_MODULE_12__["default"], {
@@ -4209,7 +4209,7 @@ var Login = function Login(_ref15) {
     height: "16px",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 525
+      lineNumber: 526
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_components_ui_Align__WEBPACK_IMPORTED_MODULE_10__["default"], {
@@ -4217,20 +4217,20 @@ var Login = function Login(_ref15) {
     placing: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 526
+      lineNumber: 527
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_components_ui_Button__WEBPACK_IMPORTED_MODULE_11__["default"], {
     pad: 0.01,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 527
+      lineNumber: 528
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 528
+      lineNumber: 529
     },
     __self: this
   }, "Create an acount")), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("div", {
@@ -4239,7 +4239,7 @@ var Login = function Login(_ref15) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 530
+      lineNumber: 531
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_components_ui_Align__WEBPACK_IMPORTED_MODULE_10__["default"], {
@@ -4247,7 +4247,7 @@ var Login = function Login(_ref15) {
     va: "center",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 531
+      lineNumber: 532
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(IconFlat, {
@@ -4257,14 +4257,14 @@ var Login = function Login(_ref15) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 532
+      lineNumber: 533
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_components_svg__WEBPACK_IMPORTED_MODULE_9__["SubmitSvg"], {
     flat: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 536
+      lineNumber: 537
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(Icon, {
@@ -4274,41 +4274,41 @@ var Login = function Login(_ref15) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 539
+      lineNumber: 540
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
     href: "/Signedin",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 543
+      lineNumber: 544
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("a", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 544
+      lineNumber: 545
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_components_svg__WEBPACK_IMPORTED_MODULE_9__["SubmitSvg"], {
     next: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 547
+      lineNumber: 548
     },
     __self: this
   }))))))))), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_components_ui_Divider__WEBPACK_IMPORTED_MODULE_12__["default"], {
     transparent: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 558
+      lineNumber: 559
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(ShowHide, {
     hide: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 560
+      lineNumber: 561
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_components_ui_TextField__WEBPACK_IMPORTED_MODULE_15__["default"], {
@@ -4317,39 +4317,39 @@ var Login = function Login(_ref15) {
     placeholder: "enter your Password here",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 561
+      lineNumber: 562
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_components_ui_Divider__WEBPACK_IMPORTED_MODULE_12__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 566
+      lineNumber: 567
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
     href: "/Signedin",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 568
+      lineNumber: 569
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("a", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 569
+      lineNumber: 570
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_components_ui_Button__WEBPACK_IMPORTED_MODULE_11__["default"], {
     primary: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 570
+      lineNumber: 571
     },
     __self: this
   }, "LOGIN"), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_components_ui_Button__WEBPACK_IMPORTED_MODULE_11__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 571
+      lineNumber: 572
     },
     __self: this
   }, "CANCEL")))))))));
@@ -4359,7 +4359,7 @@ var Login = function Login(_ref15) {
 
 /***/ }),
 
-/***/ 6:
+/***/ 5:
 /*!******************************!*\
   !*** multi ./pages/Login.js ***!
   \******************************/

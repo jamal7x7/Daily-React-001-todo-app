@@ -318,6 +318,7 @@ const Login = ({ userSignedin, setUserSignedin }) => {
                   active={sidebarTab === 'SIGNOUT'}
                 />
               </Tabs>
+
               {/* 
               <SidebarTab>LOGIN</SidebarTab>
               <SidebarTab>SIGNUP</SidebarTab>

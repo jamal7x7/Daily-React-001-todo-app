@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 5);
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -2301,10 +2301,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-components */ "styled-components");
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _ui_Tab__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../ui/Tab */ "./components/ui/Tab.js");
-/* harmony import */ var _ui_Tabs__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../ui/Tabs */ "./components/ui/Tabs.js");
-/* harmony import */ var _ProjectList__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./ProjectList */ "./components/sidebar/ProjectList.js");
-/* harmony import */ var _UserInfo__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./UserInfo */ "./components/sidebar/UserInfo.js");
+/* harmony import */ var _ui_Modal__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../ui/Modal */ "./components/ui/Modal.js");
+/* harmony import */ var _ui_Tab__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../ui/Tab */ "./components/ui/Tab.js");
+/* harmony import */ var _ui_Tabs__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../ui/Tabs */ "./components/ui/Tabs.js");
+/* harmony import */ var _ProjectList__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./ProjectList */ "./components/sidebar/ProjectList.js");
+/* harmony import */ var _UserInfo__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./UserInfo */ "./components/sidebar/UserInfo.js");
 
 var _jsxFileName = "/Users/j/Desktop/pro-todo-app/components/sidebar/Sidebar.js";
 
@@ -2317,6 +2318,7 @@ function _templateObject() {
 
   return data;
 }
+
 
 
 
@@ -2357,57 +2359,57 @@ var Sidebar = function Sidebar(_ref8) {
   return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Styles, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 97
+      lineNumber: 98
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "sideBar",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 98
+      lineNumber: 99
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_UserInfo__WEBPACK_IMPORTED_MODULE_6__["default"], {
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_UserInfo__WEBPACK_IMPORTED_MODULE_7__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 99
+      lineNumber: 100
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "sidebarMain",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 101
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_ui_Tabs__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    __source: {
-      fileName: _jsxFileName,
       lineNumber: 102
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_ui_Tab__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    label: "TODOS",
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_ui_Tabs__WEBPACK_IMPORTED_MODULE_5__["default"], {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 103
     },
     __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_ui_Tab__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    label: "CALENDAR",
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_ui_Tab__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    label: "TODOS",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 104
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_ui_Tab__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    label: "CALENDAR",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 105
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "projects",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 107
+      lineNumber: 108
     },
     __self: this
-  }, " LISTS "), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_ProjectList__WEBPACK_IMPORTED_MODULE_5__["default"], {
+  }, " LISTS "), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_ProjectList__WEBPACK_IMPORTED_MODULE_6__["default"], {
     addListIsShown: addListIsShown,
     handleAddListIsShown: handleAddListIsShown // handleAddList={handleAddList}
     // handleDeleteList={handleDeleteList}
@@ -2416,17 +2418,26 @@ var Sidebar = function Sidebar(_ref8) {
     projects: projects,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 109
+      lineNumber: 110
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "mode",
+    onClick: function onClick(e) {
+      return alert('hello!');
+    },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 119
+      lineNumber: 120
     },
     __self: this
-  }, "ZEN")));
+  }, "ZEN"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_ui_Modal__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 123
+    },
+    __self: this
+  }, "Hello there !!!!")));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Sidebar);
@@ -3820,6 +3831,63 @@ var DropMenu = function DropMenu(_ref5) {
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (DropMenu);
+
+/***/ }),
+
+/***/ "./components/ui/Modal.js":
+/*!********************************!*\
+  !*** ./components/ui/Modal.js ***!
+  \********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/taggedTemplateLiteral */ "./node_modules/@babel/runtime-corejs2/helpers/esm/taggedTemplateLiteral.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-dom */ "react-dom");
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! styled-components */ "styled-components");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_3__);
+
+var _jsxFileName = "/Users/j/Desktop/pro-todo-app/components/ui/Modal.js";
+
+function _templateObject() {
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  font-size: ", ";\n  font-weight: ", ";\n  padding: 0 ", "rem;\n"]);
+
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+
+
+
+
+var M = styled_components__WEBPACK_IMPORTED_MODULE_3___default.a.div(_templateObject(), function (_ref) {
+  var theme = _ref.theme;
+  return theme.size.s;
+}, function (_ref2) {
+  var theme = _ref2.theme;
+  return theme.fontWeights.bold;
+}, function (props) {
+  return props.pad ? props.pad : 3;
+});
+
+var Modal = function Modal(_ref3) {
+  var children = _ref3.children;
+  return react_dom__WEBPACK_IMPORTED_MODULE_2___default.a.createPortal(react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12
+    },
+    __self: this
+  }, children), document.body);
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Modal);
 
 /***/ }),
 
@@ -5341,7 +5409,7 @@ var Index = function Index() {
 
 /***/ }),
 
-/***/ 5:
+/***/ 4:
 /*!*********************************!*\
   !*** multi ./pages/Signedin.js ***!
   \*********************************/
@@ -5625,6 +5693,17 @@ module.exports = require("react");
 /***/ (function(module, exports) {
 
 module.exports = require("react-beautiful-dnd");
+
+/***/ }),
+
+/***/ "react-dom":
+/*!****************************!*\
+  !*** external "react-dom" ***!
+  \****************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("react-dom");
 
 /***/ }),
 

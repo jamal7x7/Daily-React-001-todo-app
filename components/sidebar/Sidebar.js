@@ -116,7 +116,9 @@ const Sidebar = ({
         />
       </div>
 
-      <div className='mode'>ZEN</div>
+      <div className='mode' onClick={e => alert('hello!')}>
+        ZEN
+      </div>
     </div>
   </Styles>
 )
