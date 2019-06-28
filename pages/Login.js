@@ -3,6 +3,7 @@ import { lighten } from 'polished'
 import React, { useRef, useState } from 'react'
 import { animated, useSpring } from 'react-spring'
 import styled, { css } from 'styled-components'
+// import Client from '../components/Client'
 import Layout from '../components/Layout'
 import { UserInfo } from '../components/sidebar'
 import { AvatarSvg, SubmitSvg } from '../components/svg'
@@ -208,6 +209,8 @@ const Login = ({ userSignedin, setUserSignedin }) => {
   const [show2, setShow2] = useState(true)
   const [sidebarTab, setSidebarTab] = useState('LOGIN')
 
+  const [user, setUser] = useState({})
+
   const handleAddListIsShown = e => {
     setAddListIsShown(prev => !prev)
   }
@@ -291,6 +294,13 @@ const Login = ({ userSignedin, setUserSignedin }) => {
     el.classList.add('active')
     console.log(el)
   }
+  const handleInputChange = e => {
+    e.preventDefault()
+
+    let v = e.target.value
+    setUser(p => ({ ...p, name: v }))
+    console.log(v)
+  }
 
   // useEffect(() => {
   //   console.log(sidebarTab)
@@ -313,9 +323,9 @@ const Login = ({ userSignedin, setUserSignedin }) => {
                   active={sidebarTab === 'LOGIN'}
                 />
                 <Tab
-                  label='SIGNOUT'
+                  label='SIGNUP'
                   handleTabClick={handleTabClick}
-                  active={sidebarTab === 'SIGNOUT'}
+                  active={sidebarTab === 'SIGNUP'}
                 />
               </Tabs>
 
@@ -329,6 +339,7 @@ const Login = ({ userSignedin, setUserSignedin }) => {
               <div className='mode'>Zen</div>
             </div>
           </div>
+          {/*/////////////////////////////////////////////////////*/}
           {sidebarTab === 'LOGIN' && (
             <div className='content'>
               <Align ha='center' va='center' width='400px' stack>
@@ -345,7 +356,9 @@ const Login = ({ userSignedin, setUserSignedin }) => {
                     <InputEmail
                       autoFocus
                       placeholder='enter your email here'
+                      value={user.email}
                       onClick={e => setShow(true)}
+                      onChange={e => handleInputChange(e)}
                     />
                   </animated.div>
                   {/*<TextField
@@ -357,21 +370,28 @@ const Login = ({ userSignedin, setUserSignedin }) => {
                   {/*<Divider transparent height='0px' />*/}
                 </animated.div>
                 <Divider transparent height='16px' />
-                {show && (
-                  <Align ha='end' va='center'>
-                    <Link href='/Signedin'>
-                      <a>
-                        {/*<Button>BACK</Button>
-                                                <Button primary>NEXT</Button>*/}
-                        <SubmitSvg flat />
-                      </a>
-                    </Link>
 
-                    <Icon className='big-svg' onClick={e => setShow(false)}>
-                      <SubmitSvg next />
-                    </Icon>
+                {show && (
+                  <Align va='center' placing>
+                    <Button pad={0.01}>
+                      <div>Create an acount</div>
+                    </Button>
+                    <div style={{ display: 'flex' }}>
+                      <Align ha='end' va='center'>
+                        <Link href='/Signedin'>
+                          <a>
+                            <SubmitSvg flat />
+                          </a>
+                        </Link>
+
+                        <Icon className='big-svg' onClick={e => setShow(false)}>
+                          <SubmitSvg next />
+                        </Icon>
+                      </Align>
+                    </div>
                   </Align>
                 )}
+
                 {!show && (
                   <animated.div style={fpassword}>
                     <ShowHide>
@@ -401,8 +421,6 @@ const Login = ({ userSignedin, setUserSignedin }) => {
                             >
                               <Link href='/Signedin'>
                                 <a>
-                                  {/*<Button>BACK</Button>
-    <Button primary>NEXT</Button>*/}
                                   <SubmitSvg next />
                                 </a>
                               </Link>
@@ -433,8 +451,8 @@ const Login = ({ userSignedin, setUserSignedin }) => {
               </Align>
             </div>
           )}
-
-          {sidebarTab === 'SIGNOUT' && (
+          {/*/////////////////////////////////////////////////////*/}
+          {sidebarTab === 'SIGNUP' && (
             <div className='content'>
               <Align ha='center' va='center' width='400px' stack>
                 <animated.div style={femail}>
@@ -479,15 +497,15 @@ const Login = ({ userSignedin, setUserSignedin }) => {
                 )}
                 {!show && (
                   <animated.div style={fpassword}>
-                    <ShowHide>
-                      <TextField
-                        autoFocus
-                        label='Password'
-                        type='password'
-                        placeholder='enter your Password here'
-                      />
+                    <TextField
+                      autoFocus
+                      label='Password'
+                      type='password'
+                      placeholder='enter your Password here'
+                    />
 
-                      <Divider transparent height='16px' />
+                    <Divider transparent height='16px' />
+                    {show2 && (
                       <Align va='center' placing>
                         <Button pad={0.01}>
                           <div>Create an acount</div>
@@ -510,7 +528,7 @@ const Login = ({ userSignedin, setUserSignedin }) => {
                           </Align>
                         </div>
                       </Align>
-                    </ShowHide>
+                    )}
                   </animated.div>
                 )}
                 {!show2 && (
@@ -518,9 +536,9 @@ const Login = ({ userSignedin, setUserSignedin }) => {
                     <ShowHide>
                       <TextField
                         autoFocus
-                        label='Password'
+                        label='Confirm Password'
                         type='password'
-                        placeholder='enter your Password here'
+                        placeholder='Retype your Password here'
                       />
 
                       <Divider transparent height='16px' />
