@@ -1,9 +1,11 @@
+import { gql } from 'apollo-boost'
 import Link from 'next/link'
 import { lighten } from 'polished'
 import React, { useRef, useState } from 'react'
+import { Mutation } from 'react-apollo'
 import { animated, useSpring } from 'react-spring'
 import styled, { css } from 'styled-components'
-// import Client from '../components/Client'
+import Client from '../components/Client'
 import Layout from '../components/Layout'
 import { UserInfo } from '../components/sidebar'
 import { AvatarSvg, SubmitSvg } from '../components/svg'
@@ -198,6 +200,19 @@ const InputEmail = styled.input`
   }
 `
 
+const LOGIN_MUTATION = gql`
+  mutation($data: LoginUserInput!) {
+    login(data: $data) {
+      user {
+        id
+        email
+        name
+      }
+      token
+    }
+  }
+`
+
 ///////////////////////////////////////////COMPONENT//////////////////////////////////////////////
 
 const Login = ({ userSignedin, setUserSignedin }) => {
@@ -298,16 +313,42 @@ const Login = ({ userSignedin, setUserSignedin }) => {
     e.preventDefault()
 
     let v = e.target.value
-    setUser(p => ({ ...p, name: v }))
-    console.log(v)
+    setUser(p => ({ ...p, email: v }))
+    console.log('Email=========>', v)
+  }
+  const handlePasswordChange = e => {
+    e.preventDefault()
+
+    let v = e.target.value
+    setUser(p => ({ ...p, password: v }))
+    console.log('Password=========>', v)
+  }
+  const handleSubmitForm = (e, login, data) => {
+    e.preventDefault()
+    const v = e.target.value
+    console.log('helooooooooooo from form', v)
+
+    login({
+      variables: {
+        data: {
+          // email: 'jamal@g.com',
+          // password: '01010101'
+          email: user.email,
+          password: user.password
+        }
+      }
+    })
+    e.target.value = ''
   }
 
   // useEffect(() => {
   //   console.log(sidebarTab)
   // })
+  let input
 
   return (
     <Layout>
+      <Client />
       <Styles>
         <div className='wrapper'>
           <div className='sideBar'>
@@ -343,111 +384,128 @@ const Login = ({ userSignedin, setUserSignedin }) => {
           {sidebarTab === 'LOGIN' && (
             <div className='content'>
               <Align ha='center' va='center' width='400px' stack>
-                <animated.div style={femail}>
-                  <animated.div style={favatar}>
-                    <Align ha='center' va='center'>
-                      <AvatarSvg />
-                    </Align>
-                  </animated.div>
-                  <animated.div style={flabel}>
-                    <Label> Email </Label>
-                  </animated.div>
-                  <animated.div style={finput}>
-                    <InputEmail
-                      autoFocus
-                      placeholder='enter your email here'
-                      value={user.email}
-                      onClick={e => setShow(true)}
-                      onChange={e => handleInputChange(e)}
-                    />
-                  </animated.div>
-                  {/*<TextField
+                <Mutation mutation={LOGIN_MUTATION}>
+                  {(login, { data }) => (
+                    <div>
+                      <form onSubmit={e => handleSubmitForm(e)}>
+                        <animated.div style={femail}>
+                          <animated.div style={favatar}>
+                            <Align ha='center' va='center'>
+                              <AvatarSvg />
+                            </Align>
+                          </animated.div>
+                          <animated.div style={flabel}>
+                            <Label> Email </Label>
+                          </animated.div>
+                          <animated.div style={finput}>
+                            <InputEmail
+                              autoFocus
+                              placeholder='enter your email here'
+                              value={user.email}
+                              onClick={e => setShow(true)}
+                              onChange={e => handleInputChange(e)}
+                            />
+                          </animated.div>
+                          {/*<TextField
                         autoFocus
                         label='Email'
                         placeholder='enter your email here'
                         show={show}
                      />*/}
-                  {/*<Divider transparent height='0px' />*/}
-                </animated.div>
-                <Divider transparent height='16px' />
+                          {/*<Divider transparent height='0px' />*/}
+                        </animated.div>
+                        <Divider transparent height='16px' />
 
-                {show && (
-                  <Align va='center' placing>
-                    <Button pad={0.01}>
-                      <div>Create an acount</div>
-                    </Button>
-                    <div style={{ display: 'flex' }}>
-                      <Align ha='end' va='center'>
-                        <Link href='/Signedin'>
-                          <a>
-                            <SubmitSvg flat />
-                          </a>
-                        </Link>
+                        {show && (
+                          <Align va='center' placing>
+                            <Button pad={0.01}>
+                              <div>Create an acount</div>
+                            </Button>
+                            <div style={{ display: 'flex' }}>
+                              <Align ha='end' va='center'>
+                                <Link href='/Signedin'>
+                                  <a>
+                                    <SubmitSvg flat />
+                                  </a>
+                                </Link>
 
-                        <Icon className='big-svg' onClick={e => setShow(false)}>
-                          <SubmitSvg next />
-                        </Icon>
-                      </Align>
-                    </div>
-                  </Align>
-                )}
-
-                {!show && (
-                  <animated.div style={fpassword}>
-                    <ShowHide>
-                      <TextField
-                        autoFocus
-                        label='Password'
-                        type='password'
-                        placeholder='enter your Password here'
-                      />
-                      <Divider transparent height='16px' />
-                      <Align va='center' placing>
-                        <Button pad={0.01}>
-                          <div>Create an acount</div>
-                        </Button>
-                        <div style={{ display: 'flex' }}>
-                          <Align ha='end' va='center'>
-                            <IconFlat
-                              className='big-svg-flat'
-                              onClick={e => setShow(true)}
-                            >
-                              <SubmitSvg flat />
-                            </IconFlat>
-
-                            <Icon
-                              className='big-svg'
-                              onClick={e => setShow(true)}
-                            >
-                              <Link href='/Signedin'>
-                                <a>
+                                <Icon
+                                  className='big-svg'
+                                  onClick={e => setShow(false)}
+                                >
                                   <SubmitSvg next />
-                                </a>
-                              </Link>
-                            </Icon>
+                                </Icon>
+                              </Align>
+                            </div>
                           </Align>
-                        </div>
-                      </Align>
-                    </ShowHide>
-                  </animated.div>
-                )}
-                <Divider transparent />
+                        )}
 
-                <ShowHide hide>
-                  <TextField
-                    autoFocus
-                    label='Password'
-                    placeholder='enter your Password here'
-                  />
-                  <Divider />
+                        {!show && (
+                          <animated.div style={fpassword}>
+                            <ShowHide>
+                              <InputEmail
+                                autoFocus
+                                label='Password'
+                                type='password'
+                                placeholder='enter your Password here'
+                                value={user.password}
+                                // onClick={e => setShow(true)}
+                                onChange={e => handlePasswordChange(e)}
+                              />
+                              <Divider transparent height='16px' />
+                              <Align va='center' placing>
+                                <Button pad={0.01}>
+                                  <div>Create an acount</div>
+                                </Button>
+                                <div style={{ display: 'flex' }}>
+                                  <Align ha='end' va='center'>
+                                    <IconFlat
+                                      className='big-svg-flat'
+                                      onClick={e => setShow(true)}
+                                    >
+                                      <SubmitSvg flat />
+                                    </IconFlat>
 
-                  <Link href='/Signedin'>
-                    <a>
-                      <Button primary>LOGIN</Button>
-                      <Button>CANCEL</Button>
-                    </a>
-                  </Link>
-                </ShowHide>
+                                    <Icon
+                                      className='big-svg'
+                                      onClick={e => {
+                                        setShow(true)
+                                        handleSubmitForm(e, login, data)
+                                      }}
+                                    >
+                                      <Link href='/Signedin'>
+                                        <a>
+                                          <SubmitSvg next />
+                                        </a>
+                                      </Link>
+                                    </Icon>
+                                  </Align>
+                                </div>
+                              </Align>
+                            </ShowHide>
+                          </animated.div>
+                        )}
+                        <Divider transparent />
+
+                        <ShowHide hide>
+                          <TextField
+                            autoFocus
+                            label='Password'
+                            placeholder='enter your Password here'
+                          />
+                          <Divider />
+
+                          <Link href='/Signedin'>
+                            <a>
+                              <Button primary>LOGIN</Button>
+                              <Button>CANCEL</Button>
+                            </a>
+                          </Link>
+                        </ShowHide>
+                      </form>
+                    </div>
+                  )}
+                </Mutation>
               </Align>
             </div>
           )}

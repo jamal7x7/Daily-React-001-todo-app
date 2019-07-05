@@ -1,10 +1,10 @@
-import ApolloBoost, { gql } from 'apollo-boost'
+import { gql } from 'apollo-boost'
 import { Query } from 'react-apollo'
 import styled from 'styled-components'
 
-const client = new ApolloBoost({
-  uri: 'http://localhost:4000'
-})
+// const client = new ApolloBoost({
+//   uri: 'http://localhost:4000'
+// })
 
 const getUsers = gql`
   query {
